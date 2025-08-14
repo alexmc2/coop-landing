@@ -1,10 +1,10 @@
 export const metadata = {
-  title: "Contact us - Open PRO",
-  description: "Page description",
+  title: 'Contact us - Open PRO',
+  description: 'Page description',
 };
 
-import PageIllustration from "@/components/page-illustration";
-import FooterSeparator from "@/components/footer-separator";
+import PageIllustration from '@/components/page-illustration';
+import FooterSeparator from '@/components/footer-separator';
 
 export default function Contact() {
   return (
@@ -15,7 +15,7 @@ export default function Contact() {
           <div className="py-12 md:py-20">
             {/* Section header */}
             <div className="pb-12 text-center">
-              <h1 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-indigo-200),var(--color-gray-50),var(--color-indigo-300),var(--color-gray-200))] bg-[length:200%_auto] bg-clip-text pb-5 font-nacelle text-4xl font-semibold text-transparent md:text-5xl">
+              <h1 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-slate-200),var(--color-indigo-200),var(--color-slate-50),var(--color-indigo-300),var(--color-slate-200))] bg-[length:200%_auto] bg-clip-text pb-5 font-nacelle text-4xl font-semibold text-transparent md:text-5xl">
                 Contact us
               </h1>
               <div className="mx-auto max-w-3xl">
@@ -82,10 +82,10 @@ export default function Contact() {
                     </label>
                     <select
                       id="country"
-                      className="form-select w-full text-gray-200"
-                      defaultValue={"default"}
+                      className="form-select w-full text-slate-200"
+                      defaultValue={'default'}
                     >
-                      <option value={"default"} disabled hidden>
+                      <option value={'default'} disabled hidden>
                         Select a country
                       </option>
                       <option>United States</option>
@@ -104,10 +104,10 @@ export default function Contact() {
                     </label>
                     <select
                       id="topic"
-                      className="form-select w-full text-gray-200"
-                      defaultValue={"default"}
+                      className="form-select w-full text-slate-200"
+                      defaultValue={'default'}
                     >
-                      <option value={"default"} disabled hidden>
+                      <option value={'default'} disabled hidden>
                         Select a topic
                       </option>
                       <option>General</option>
@@ -147,19 +147,19 @@ export default function Contact() {
                   <textarea
                     id="description"
                     rows={5}
-                    className="form-textarea w-full text-gray-200"
+                    className="form-textarea w-full text-slate-200"
                     placeholder="Include as much details as you can"
-                    defaultValue={""}
+                    defaultValue={''}
                   />
                 </div>
               </div>
               <div className="mt-8 flex w-full flex-col justify-between gap-5 md:flex-row md:items-center">
                 <p className="text-sm text-indigo-200/65">
-                  By continuing, you agree to our{" "}
+                  By continuing, you agree to our{' '}
                   <a className="underline hover:no-underline" href="#0">
                     Terms of Use
-                  </a>{" "}
-                  and{" "}
+                  </a>{' '}
+                  and{' '}
                   <a className="underline hover:no-underline" href="#0">
                     Privacy policy
                   </a>

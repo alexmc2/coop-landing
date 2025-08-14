@@ -1,7 +1,7 @@
-import Image from "next/image";
-import BlurredShape from "@/public/images/blurred-shape.svg";
-import TestimonialImage from "@/public/images/large-testimonial-01.jpg";
-import PricingTable from "@/components/pricing-table";
+import Image from 'next/image';
+import BlurredShape from '@/public/images/blurred-shape.svg';
+import TestimonialImage from '@/public/images/large-testimonial-01.jpg';
+import PricingTable from '@/components/pricing-table';
 
 export default function PricingHome() {
   return (
@@ -27,7 +27,7 @@ export default function PricingHome() {
                 Simple Pricing
               </span>
             </div>
-            <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-indigo-200),var(--color-gray-50),var(--color-indigo-300),var(--color-gray-200))] bg-[length:200%_auto] bg-clip-text pb-10 font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
+            <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-slate-200),var(--color-indigo-200),var(--color-slate-50),var(--color-indigo-300),var(--color-slate-200))] bg-[length:200%_auto] bg-clip-text pb-10 font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
               Pick the right plan for your business
             </h2>
           </div>
@@ -44,15 +44,15 @@ export default function PricingHome() {
                   height={40}
                   alt="Large testimonial"
                 />
-                <p className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-indigo-200),var(--color-gray-50),var(--color-indigo-300),var(--color-gray-200))] bg-[length:200%_auto] bg-clip-text pb-3 font-nacelle text-xl font-semibold text-transparent">
+                <p className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-slate-200),var(--color-indigo-200),var(--color-slate-50),var(--color-indigo-300),var(--color-slate-200))] bg-[length:200%_auto] bg-clip-text pb-3 font-nacelle text-xl font-semibold text-transparent">
                   “Open PRO lives up to its name. It's incredibly easy to use
                   yet powerful enough to handle all my content needs
                   effortlessly. It's become an essential part of our work
                   routine.”
                 </p>
-                <div className="text-sm font-medium text-gray-200">
+                <div className="text-sm font-medium text-slate-200">
                   <span>Chris Pick</span>
-                  <span className="text-gray-700"> - </span>
+                  <span className="text-slate-700"> - </span>
                   <a
                     className="text-indigo-200/65 transition-colors hover:text-indigo-500"
                     href="#0"

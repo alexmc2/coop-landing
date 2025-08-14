@@ -1,9 +1,9 @@
-import Image from "next/image";
+import Image from 'next/image';
 
-import TeamImg01 from "@/public/images/team-mosaic-01.jpg";
-import TeamImg02 from "@/public/images/team-mosaic-02.jpg";
-import TeamImg03 from "@/public/images/team-mosaic-03.jpg";
-import TeamImg04 from "@/public/images/team-mosaic-04.jpg";
+import TeamImg01 from '@/public/images/team-mosaic-01.jpg';
+import TeamImg02 from '@/public/images/team-mosaic-02.jpg';
+import TeamImg03 from '@/public/images/team-mosaic-03.jpg';
+import TeamImg04 from '@/public/images/team-mosaic-04.jpg';
 
 export default function HeroAbout() {
   return (
@@ -13,7 +13,7 @@ export default function HeroAbout() {
         <div className="py-12 md:py-20">
           {/* Section header */}
           <div className="pb-12 text-center md:pb-20">
-            <h1 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-indigo-200),var(--color-gray-50),var(--color-indigo-300),var(--color-gray-200))] bg-[length:200%_auto] bg-clip-text pb-5 font-nacelle text-4xl font-semibold text-transparent md:text-5xl">
+            <h1 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-slate-200),var(--color-indigo-200),var(--color-slate-50),var(--color-indigo-300),var(--color-slate-200))] bg-[length:200%_auto] bg-clip-text pb-5 font-nacelle text-4xl font-semibold text-transparent md:text-5xl">
               The story behind the project
             </h1>
             <div className="mx-auto max-w-3xl">
@@ -27,12 +27,12 @@ export default function HeroAbout() {
             <div className="relative aspect-4/3 w-full">
               <figure
                 className="absolute h-auto"
-                style={{ top: "45%", width: "41.67%", maxWidth: 320 }}
+                style={{ top: '45%', width: '41.67%', maxWidth: 320 }}
                 data-aos="fade-right"
               >
-                <div className="relative -rotate-2 overflow-hidden rounded-2xl before:absolute before:inset-0 before:bg-linear-to-br before:from-gray-900 before:via-indigo-500 before:to-gray-900">
+                <div className="relative -rotate-2 overflow-hidden rounded-2xl before:absolute before:inset-0 before:bg-linear-to-br before:from-slate-900 before:via-indigo-500 before:to-slate-900">
                   <Image
-                    className="opacity-80 grayscale"
+                    className="opacity-80 slatescale"
                     src={TeamImg02}
                     width={320}
                     height={240}
@@ -42,13 +42,13 @@ export default function HeroAbout() {
               </figure>
               <figure
                 className="relative mx-auto"
-                style={{ width: "78.13%", maxWidth: 600 }}
+                style={{ width: '78.13%', maxWidth: 600 }}
                 data-aos="fade-down"
                 data-aos-delay={100}
               >
-                <div className="relative -rotate-2 overflow-hidden rounded-2xl before:absolute before:inset-0 before:bg-linear-to-br before:from-gray-900 before:via-indigo-500 before:to-gray-900">
+                <div className="relative -rotate-2 overflow-hidden rounded-2xl before:absolute before:inset-0 before:bg-linear-to-br before:from-slate-900 before:via-indigo-500 before:to-slate-900">
                   <Image
-                    className="opacity-90 grayscale"
+                    className="opacity-90 slatescale"
                     src={TeamImg01}
                     width={600}
                     height={338}
@@ -59,17 +59,17 @@ export default function HeroAbout() {
               <figure
                 className="absolute h-auto"
                 style={{
-                  top: "8.5%",
+                  top: '8.5%',
                   right: 0,
-                  width: "32.56%",
+                  width: '32.56%',
                   maxWidth: 250,
                 }}
                 data-aos="fade-left"
                 data-aos-delay={200}
               >
-                <div className="relative rotate-2 overflow-hidden rounded-2xl before:absolute before:inset-0 before:bg-linear-to-br before:from-gray-900 before:via-indigo-500 before:to-gray-900">
+                <div className="relative rotate-2 overflow-hidden rounded-2xl before:absolute before:inset-0 before:bg-linear-to-br before:from-slate-900 before:via-indigo-500 before:to-slate-900">
                   <Image
-                    className="opacity-90 grayscale"
+                    className="opacity-90 slatescale"
                     src={TeamImg03}
                     width={250}
                     height={188}
@@ -81,16 +81,16 @@ export default function HeroAbout() {
                 className="absolute h-auto"
                 style={{
                   bottom: 0,
-                  right: "20%",
-                  width: "25.53%",
+                  right: '20%',
+                  width: '25.53%',
                   maxWidth: 196,
                 }}
                 data-aos="fade-up"
                 data-aos-delay={300}
               >
-                <div className="relative rotate-2 overflow-hidden rounded-2xl before:absolute before:inset-0 before:bg-linear-to-br before:from-gray-900 before:via-indigo-500 before:to-gray-900 before:opacity-10">
+                <div className="relative rotate-2 overflow-hidden rounded-2xl before:absolute before:inset-0 before:bg-linear-to-br before:from-slate-900 before:via-indigo-500 before:to-slate-900 before:opacity-10">
                   <Image
-                    className="opacity-20 grayscale"
+                    className="opacity-20 slatescale"
                     src={TeamImg04}
                     width={196}
                     height={196}

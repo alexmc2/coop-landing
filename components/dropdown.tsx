@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import { useRef, useState } from "react";
-import { Transition } from "@headlessui/react";
+import { useRef, useState } from 'react';
+import { Transition } from '@headlessui/react';
 
 type DropdownProps = {
   children: React.ReactNode;
@@ -32,7 +32,7 @@ export default function Dropdown({ children, title }: DropdownProps) {
       onMouseEnter={() => setDropdownOpen(true)}
       onMouseLeave={() => setDropdownOpen(false)}
     >
-      <span className="flex cursor-pointer items-center text-gray-200 transition group-hover:text-indigo-500">
+      <span className="flex cursor-pointer items-center text-slate-200 transition group-hover:text-indigo-500">
         {title}
       </span>
       <button
@@ -42,7 +42,7 @@ export default function Dropdown({ children, title }: DropdownProps) {
       >
         <span className="sr-only">Show submenu for "{title}"</span>
         <svg
-          className="fill-gray-500"
+          className="fill-slate-500"
           xmlns="http://www.w3.org/2000/svg"
           width="10"
           height="6"
@@ -50,12 +50,12 @@ export default function Dropdown({ children, title }: DropdownProps) {
           <path d="m1.06.19 3.5 3.5 3.5-3.5 1.061 1.06-4.56 4.56L0 1.25 1.06.19Z" />
         </svg>
       </button>
-      <span className="absolute right-0 top-full origin-top-left">        
+      <span className="absolute right-0 top-full origin-top-left">
         <Transition
           ref={dropdownRef}
           show={dropdownOpen}
           as="ul"
-          className="relative mt-5 w-36 rounded-xl bg-gray-900/90 p-2 backdrop-blur-xs before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_bottom,var(--color-gray-800),var(--color-gray-700),var(--color-gray-800))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] transform transition ease-out data-enter:data-closed:-translate-y-2 data-closed:opacity-0"
+          className="relative mt-5 w-36 rounded-xl bg-slate-900/90 p-2 backdrop-blur-xs before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_bottom,var(--color-slate-800),var(--color-slate-700),var(--color-slate-800))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] transform transition ease-out data-enter:data-closed:-translate-y-2 data-closed:opacity-0"
           onBlur={handleFocusOut}
         >
           {children}

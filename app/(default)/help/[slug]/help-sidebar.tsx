@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export default function HelpSidebar() {
   const pathname = usePathname();
@@ -9,29 +9,29 @@ export default function HelpSidebar() {
   const links = [
     {
       name: "FAQ's - General Topics",
-      href: "/help/frequently-asked-questions",
+      href: '/help/frequently-asked-questions',
     },
     {
-      name: "What is Open PRO",
-      href: "/help/what-is-open-pro",
+      name: 'What is Open PRO',
+      href: '/help/what-is-open-pro',
     },
     {
-      name: "Open PRO plan’s features",
-      href: "/help/open-pro-plans-features",
+      name: 'Open PRO plan’s features',
+      href: '/help/open-pro-plans-features',
     },
     {
-      name: "Get started",
-      href: "/help/get-started",
+      name: 'Get started',
+      href: '/help/get-started',
     },
     {
-      name: "Payments FAQ’s",
-      href: "/help/payments-faqs",
+      name: 'Payments FAQ’s',
+      href: '/help/payments-faqs',
     },
   ];
 
   return (
     <aside className="mb-16 md:mb-0 md:mr-10 md:w-60 md:shrink-0">
-      <nav className="relative rounded-2xl bg-linear-to-br from-gray-900/50 via-gray-800/25 to-gray-900/50 px-5 py-3 backdrop-blur-xs before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_right,var(--color-gray-800),var(--color-gray-700),var(--color-gray-800))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)]">
+      <nav className="relative rounded-2xl bg-linear-to-br from-slate-900/50 via-slate-800/25 to-slate-900/50 px-5 py-3 backdrop-blur-xs before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_right,var(--color-slate-800),var(--color-slate-700),var(--color-slate-800))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)]">
         <ul className="divide-y text-sm">
           {links.map((link, linkIndex) => (
             <li
@@ -39,7 +39,11 @@ export default function HelpSidebar() {
               className="py-2 [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-400/.25),transparent)1]"
             >
               <Link
-                className={`group flex items-center transition ${pathname === link.href ? "text-indigo-500" : "text-indigo-200/65 hover:text-indigo-500"}`}
+                className={`group flex items-center transition ${
+                  pathname === link.href
+                    ? 'text-indigo-500'
+                    : 'text-indigo-200/65 hover:text-indigo-500'
+                }`}
                 href={link.href}
               >
                 <span>{link.name}</span>

@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Home - Open PRO",
-  description: "Page description",
+  title: "Housing Co-op Management Platform - Complete Digital Solution",
+  description: "Transform your housing cooperative with our comprehensive management platform. Treasury, maintenance, meetings, events, and community tools all in one secure application.",
 };
 
 import PageIllustration from "@/components/page-illustration";

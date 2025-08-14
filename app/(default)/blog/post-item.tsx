@@ -1,25 +1,27 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import Image from "next/image";
-import { useCategoryProvider } from "./category-provider";
+import Link from 'next/link';
+import Image from 'next/image';
+import { useCategoryProvider } from './category-provider';
 
 export default function PostItem({ ...props }) {
   const { category } = useCategoryProvider();
-  const isHidden = category !== "All" && category !== props.metadata.category;
+  const isHidden = category !== 'All' && category !== props.metadata.category;
 
   return (
     <article
-      className={`flex h-full flex-col transition-opacity ${isHidden ? "pointer-events-none opacity-15" : ""}`}
+      className={`flex h-full flex-col transition-opacity ${
+        isHidden ? 'pointer-events-none opacity-15' : ''
+      }`}
     >
       <header>
         <Link
-          className="group relative mb-6 block overflow-hidden rounded-2xl border border-gray-800/80 before:absolute before:inset-0 before:-z-10 before:bg-linear-to-br before:from-gray-900 before:via-indigo-500/50 before:to-indigo-500 before:opacity-50"
+          className="group relative mb-6 block overflow-hidden rounded-2xl border border-slate-800/80 before:absolute before:inset-0 before:-z-10 before:bg-linear-to-br before:from-slate-900 before:via-indigo-500/50 before:to-indigo-500 before:opacity-50"
           href={`/blog/${props.slug}`}
           tabIndex={-1}
         >
           <Image
-            className="aspect-101/64 w-full object-cover opacity-70 grayscale transition ease-out group-hover:scale-[1.02] group-hover:opacity-100 group-hover:grayscale-[20%]"
+            className="aspect-101/64 w-full object-cover opacity-70 slatescale transition ease-out group-hover:scale-[1.02] group-hover:opacity-100 group-hover:slatescale-[20%]"
             src={props.metadata.image}
             width={347}
             height={220}
@@ -30,7 +32,7 @@ export default function PostItem({ ...props }) {
           <ul className="flex flex-wrap gap-2">
             <li>
               <a
-                className="btn-sm relative rounded-full bg-gray-800/40 px-2.5 py-0.5 text-xs font-normal before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_bottom,--theme(--color-gray-700/.15),--theme(--color-gray-700/.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] hover:bg-gray-800/60"
+                className="btn-sm relative rounded-full bg-slate-800/40 px-2.5 py-0.5 text-xs font-normal before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_bottom,--theme(--color-slate-700/.15),--theme(--color-slate-700/.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] hover:bg-slate-800/60"
                 href="#0"
               >
                 <span className="bg-linear-to-r from-indigo-500 to-indigo-200 bg-clip-text text-transparent">
@@ -42,7 +44,7 @@ export default function PostItem({ ...props }) {
         </div>
         <h3 className="mb-2 font-nacelle text-lg font-semibold">
           <Link
-            className="text-gray-200 transition hover:text-white"
+            className="text-slate-200 transition hover:text-white"
             href={`/blog/${props.slug}`}
           >
             {props.metadata.title}
@@ -57,9 +59,9 @@ export default function PostItem({ ...props }) {
           height={28}
           alt={props.metadata.author}
         />
-        <div className="text-sm font-medium text-gray-200">
+        <div className="text-sm font-medium text-slate-200">
           <span>{props.metadata.author}</span>
-          <span className="text-gray-700"> - </span>
+          <span className="text-slate-700"> - </span>
           <a
             className="text-indigo-200/65 transition-colors hover:text-indigo-500"
             href={props.metadata.authorLink}

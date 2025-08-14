@@ -1,10 +1,10 @@
-import Link from "next/link";
-import Image from "next/image";
-import PostImg10 from "@/public/images/post-thumb-10.jpg";
-import PostImg11 from "@/public/images/post-thumb-11.jpg";
-import PostImg12 from "@/public/images/post-thumb-12.jpg";
-import PostAuthor04 from "@/public/images/post-author-04.jpg";
-import PostAuthor05 from "@/public/images/post-author-05.jpg";
+import Link from 'next/link';
+import Image from 'next/image';
+import PostImg10 from '@/public/images/post-thumb-10.jpg';
+import PostImg11 from '@/public/images/post-thumb-11.jpg';
+import PostImg12 from '@/public/images/post-thumb-12.jpg';
+import PostAuthor04 from '@/public/images/post-author-04.jpg';
+import PostAuthor05 from '@/public/images/post-author-05.jpg';
 
 export default function RelatedPosts() {
   return (
@@ -13,7 +13,7 @@ export default function RelatedPosts() {
         className="mx-auto mt-12 max-w-3xl border-t pt-12 [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-400/.25),transparent)1] md:pt-20"
         aria-hidden="true"
       />
-      <h3 className="mb-8 text-center font-nacelle text-xl font-semibold text-gray-200 md:text-left">
+      <h3 className="mb-8 text-center font-nacelle text-xl font-semibold text-slate-200 md:text-left">
         Read next
       </h3>
       <div className="mx-auto grid max-w-sm items-start gap-8 sm:max-w-none sm:grid-cols-2 lg:grid-cols-3">
@@ -21,12 +21,12 @@ export default function RelatedPosts() {
         <article className="flex h-full flex-col transition-opacity">
           <header>
             <Link
-              className="group relative mb-6 block overflow-hidden rounded-2xl border border-gray-800/80 before:absolute before:inset-0 before:-z-10 before:bg-linear-to-br before:from-gray-900 before:via-indigo-500/50 before:to-indigo-500 before:opacity-50"
+              className="group relative mb-6 block overflow-hidden rounded-2xl border border-slate-800/80 before:absolute before:inset-0 before:-z-10 before:bg-linear-to-br before:from-slate-900 before:via-indigo-500/50 before:to-indigo-500 before:opacity-50"
               href="#0"
               tabIndex={-1}
             >
               <Image
-                className="aspect-101/64 w-full object-cover opacity-70 grayscale transition ease-out group-hover:scale-[1.02] group-hover:opacity-100 group-hover:grayscale-[20%]"
+                className="aspect-101/64 w-full object-cover opacity-70 slatescale transition ease-out group-hover:scale-[1.02] group-hover:opacity-100 group-hover:slatescale-[20%]"
                 src={PostImg10}
                 width={347}
                 height={220}
@@ -37,7 +37,7 @@ export default function RelatedPosts() {
               <ul className="flex flex-wrap gap-2">
                 <li>
                   <a
-                    className="btn-sm relative rounded-full bg-gray-800/40 px-2.5 py-0.5 text-xs font-normal before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_bottom,--theme(--color-gray-700/.15),--theme(--color-gray-700/.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] hover:bg-gray-800/60"
+                    className="btn-sm relative rounded-full bg-slate-800/40 px-2.5 py-0.5 text-xs font-normal before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_bottom,--theme(--color-slate-700/.15),--theme(--color-slate-700/.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] hover:bg-slate-800/60"
                     href="#0"
                   >
                     <span className="bg-linear-to-r from-indigo-500 to-indigo-200 bg-clip-text text-transparent">
@@ -49,7 +49,7 @@ export default function RelatedPosts() {
             </div>
             <h3 className="mb-2 font-nacelle text-lg font-semibold">
               <Link
-                className="text-gray-200 transition hover:text-white"
+                className="text-slate-200 transition hover:text-white"
                 href="#0"
               >
                 Your first 90 days using content for customer service
@@ -64,9 +64,9 @@ export default function RelatedPosts() {
               height={28}
               alt="Author 04"
             />
-            <div className="text-sm font-medium text-gray-200">
+            <div className="text-sm font-medium text-slate-200">
               <span>Bethany Clark</span>
-              <span className="text-gray-700"> - </span>
+              <span className="text-slate-700"> - </span>
               <a
                 className="text-indigo-200/65 transition-colors hover:text-indigo-500"
                 href="#0"
@@ -80,12 +80,12 @@ export default function RelatedPosts() {
         <article className="flex h-full flex-col transition-opacity">
           <header>
             <Link
-              className="group relative mb-6 block overflow-hidden rounded-2xl border border-gray-800/80 before:absolute before:inset-0 before:-z-10 before:bg-linear-to-br before:from-gray-900 before:via-indigo-500/50 before:to-indigo-500 before:opacity-50"
+              className="group relative mb-6 block overflow-hidden rounded-2xl border border-slate-800/80 before:absolute before:inset-0 before:-z-10 before:bg-linear-to-br before:from-slate-900 before:via-indigo-500/50 before:to-indigo-500 before:opacity-50"
               href="#0"
               tabIndex={-1}
             >
               <Image
-                className="aspect-101/64 w-full object-cover opacity-70 grayscale transition ease-out group-hover:scale-[1.02] group-hover:opacity-100 group-hover:grayscale-[20%]"
+                className="aspect-101/64 w-full object-cover opacity-70 slatescale transition ease-out group-hover:scale-[1.02] group-hover:opacity-100 group-hover:slatescale-[20%]"
                 src={PostImg11}
                 width={347}
                 height={220}
@@ -96,7 +96,7 @@ export default function RelatedPosts() {
               <ul className="flex flex-wrap gap-2">
                 <li>
                   <a
-                    className="btn-sm relative rounded-full bg-gray-800/40 px-2.5 py-0.5 text-xs font-normal before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_bottom,--theme(--color-gray-700/.15),--theme(--color-gray-700/.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] hover:bg-gray-800/60"
+                    className="btn-sm relative rounded-full bg-slate-800/40 px-2.5 py-0.5 text-xs font-normal before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_bottom,--theme(--color-slate-700/.15),--theme(--color-slate-700/.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] hover:bg-slate-800/60"
                     href="#0"
                   >
                     <span className="bg-linear-to-r from-indigo-500 to-indigo-200 bg-clip-text text-transparent">
@@ -108,7 +108,7 @@ export default function RelatedPosts() {
             </div>
             <h3 className="mb-2 font-nacelle text-lg font-semibold">
               <Link
-                className="text-gray-200 transition hover:text-white"
+                className="text-slate-200 transition hover:text-white"
                 href="#0"
               >
                 Open PRO’s new and improved reporting features
@@ -123,9 +123,9 @@ export default function RelatedPosts() {
               height={28}
               alt="Author 05"
             />
-            <div className="text-sm font-medium text-gray-200">
+            <div className="text-sm font-medium text-slate-200">
               <span>Ruth O'Brien</span>
-              <span className="text-gray-700"> - </span>
+              <span className="text-slate-700"> - </span>
               <a
                 className="text-indigo-200/65 transition-colors hover:text-indigo-500"
                 href="#0"
@@ -139,12 +139,12 @@ export default function RelatedPosts() {
         <article className="flex h-full flex-col transition-opacity">
           <header>
             <Link
-              className="group relative mb-6 block overflow-hidden rounded-2xl border border-gray-800/80 before:absolute before:inset-0 before:-z-10 before:bg-linear-to-br before:from-gray-900 before:via-indigo-500/50 before:to-indigo-500 before:opacity-50"
+              className="group relative mb-6 block overflow-hidden rounded-2xl border border-slate-800/80 before:absolute before:inset-0 before:-z-10 before:bg-linear-to-br before:from-slate-900 before:via-indigo-500/50 before:to-indigo-500 before:opacity-50"
               href="#0"
               tabIndex={-1}
             >
               <Image
-                className="aspect-101/64 w-full object-cover opacity-70 grayscale transition ease-out group-hover:scale-[1.02] group-hover:opacity-100 group-hover:grayscale-[20%]"
+                className="aspect-101/64 w-full object-cover opacity-70 slatescale transition ease-out group-hover:scale-[1.02] group-hover:opacity-100 group-hover:slatescale-[20%]"
                 src={PostImg12}
                 width={347}
                 height={220}
@@ -155,7 +155,7 @@ export default function RelatedPosts() {
               <ul className="flex flex-wrap gap-2">
                 <li>
                   <a
-                    className="btn-sm relative rounded-full bg-gray-800/40 px-2.5 py-0.5 text-xs font-normal before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_bottom,--theme(--color-gray-700/.15),--theme(--color-gray-700/.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] hover:bg-gray-800/60"
+                    className="btn-sm relative rounded-full bg-slate-800/40 px-2.5 py-0.5 text-xs font-normal before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_bottom,--theme(--color-slate-700/.15),--theme(--color-slate-700/.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] hover:bg-slate-800/60"
                     href="#0"
                   >
                     <span className="bg-linear-to-r from-indigo-500 to-indigo-200 bg-clip-text text-transparent">
@@ -167,7 +167,7 @@ export default function RelatedPosts() {
             </div>
             <h3 className="mb-2 font-nacelle text-lg font-semibold">
               <Link
-                className="text-gray-200 transition hover:text-white"
+                className="text-slate-200 transition hover:text-white"
                 href="#0"
               >
                 Understanding the changing economics of content management
@@ -182,9 +182,9 @@ export default function RelatedPosts() {
               height={28}
               alt="Author 05"
             />
-            <div className="text-sm font-medium text-gray-200">
+            <div className="text-sm font-medium text-slate-200">
               <span>Ruth O'Brien</span>
-              <span className="text-gray-700"> - </span>
+              <span className="text-slate-700"> - </span>
               <a
                 className="text-indigo-200/65 transition-colors hover:text-indigo-500"
                 href="#0"

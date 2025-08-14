@@ -5,7 +5,7 @@ export default function Timeline() {
         <div className="pb-12 md:pb-20">
           {/* Section header */}
           <div className="mx-auto max-w-3xl pb-12 text-center md:pb-20">
-            <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-indigo-200),var(--color-gray-50),var(--color-indigo-300),var(--color-gray-200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
+            <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-slate-200),var(--color-indigo-200),var(--color-slate-50),var(--color-indigo-300),var(--color-slate-200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
               Bringing the world's ideas to life
             </h2>
             <p className="text-lg text-indigo-200/65">
@@ -34,14 +34,14 @@ export default function Timeline() {
                     2016
                   </div>
                   <div
-                    className="absolute left-0 ml-20 h-full -translate-x-1/2 translate-y-3 transform self-start bg-gray-800 px-px"
+                    className="absolute left-0 ml-20 h-full -translate-x-1/2 translate-y-3 transform self-start bg-slate-800 px-px"
                     aria-hidden="true"
                   />
                   <div
-                    className="absolute left-0 ml-20 box-content h-2 w-2 -translate-x-1/2 transform rounded-full border-4 border-gray-950 bg-indigo-500"
+                    className="absolute left-0 ml-20 box-content h-2 w-2 -translate-x-1/2 transform rounded-full border-4 border-slate-950 bg-indigo-500"
                     aria-hidden="true"
                   />
-                  <h4 className="font-nacelle text-xl font-semibold text-gray-200">
+                  <h4 className="font-nacelle text-xl font-semibold text-slate-200">
                     Open PRO was founded in Milan, Italy
                   </h4>
                 </div>
@@ -68,14 +68,14 @@ export default function Timeline() {
                     2019
                   </div>
                   <div
-                    className="absolute left-0 ml-20 h-full -translate-x-1/2 translate-y-3 transform self-start bg-gray-800 px-px"
+                    className="absolute left-0 ml-20 h-full -translate-x-1/2 translate-y-3 transform self-start bg-slate-800 px-px"
                     aria-hidden="true"
                   />
                   <div
-                    className="absolute left-0 ml-20 box-content h-2 w-2 -translate-x-1/2 transform rounded-full border-4 border-gray-950 bg-indigo-500"
+                    className="absolute left-0 ml-20 box-content h-2 w-2 -translate-x-1/2 transform rounded-full border-4 border-slate-950 bg-indigo-500"
                     aria-hidden="true"
                   />
-                  <h4 className="font-nacelle text-xl font-semibold text-gray-200">
+                  <h4 className="font-nacelle text-xl font-semibold text-slate-200">
                     Launched the first Open PRO Advanced plan
                   </h4>
                 </div>
@@ -102,14 +102,14 @@ export default function Timeline() {
                     2022
                   </div>
                   <div
-                    className="absolute left-0 ml-20 h-full -translate-x-1/2 translate-y-3 transform self-start bg-gray-800 px-px"
+                    className="absolute left-0 ml-20 h-full -translate-x-1/2 translate-y-3 transform self-start bg-slate-800 px-px"
                     aria-hidden="true"
                   />
                   <div
-                    className="absolute left-0 ml-20 box-content h-2 w-2 -translate-x-1/2 transform rounded-full border-4 border-gray-950 bg-indigo-500"
+                    className="absolute left-0 ml-20 box-content h-2 w-2 -translate-x-1/2 transform rounded-full border-4 border-slate-950 bg-indigo-500"
                     aria-hidden="true"
                   />
-                  <h4 className="font-nacelle text-xl font-semibold text-gray-200">
+                  <h4 className="font-nacelle text-xl font-semibold text-slate-200">
                     Transitioned to a SaaS business model
                   </h4>
                 </div>
@@ -136,10 +136,10 @@ export default function Timeline() {
                     2026
                   </div>
                   <div
-                    className="absolute left-0 ml-20 box-content h-2 w-2 -translate-x-1/2 transform rounded-full border-4 border-gray-950 bg-indigo-500"
+                    className="absolute left-0 ml-20 box-content h-2 w-2 -translate-x-1/2 transform rounded-full border-4 border-slate-950 bg-indigo-500"
                     aria-hidden="true"
                   />
-                  <h4 className="font-nacelle text-xl font-semibold text-gray-200">
+                  <h4 className="font-nacelle text-xl font-semibold text-slate-200">
                     1 million happy customers
                   </h4>
                 </div>

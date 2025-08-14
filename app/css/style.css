@@ -12,12 +12,16 @@
 }
 
 @theme {
-  --font-inter: Inter, sans-serif;
-  --font-nacelle: Nacelle, sans-serif;
+  --font-geist-sans: var(--font-geist-sans);
+  --font-geist-mono: var(--font-geist-mono);
 
   --color-accent-torch: rgb(59, 130, 246);
-  
-  --background-image-torch: radial-gradient(525px at 50% 50%, var(--color-accent-torch), transparent 80%);
+
+  --background-image-torch: radial-gradient(
+    525px at 50% 50%,
+    var(--color-accent-torch),
+    transparent 80%
+  );
 
   --text-xs: 0.8125rem;
   --text-xs--line-height: 1.5384;
@@ -52,7 +56,7 @@
   --text-7xl--letter-spacing: -0.0268em;
 
   --animate-shine: shine 5s ease-in-out 500ms infinite;
-  --animate-gradient: gradient 6s linear infinite;  
+  --animate-gradient: gradient 6s linear infinite;
 
   @keyframes shine {
     0% {
@@ -95,6 +99,6 @@
   ::before,
   ::backdrop,
   ::file-selector-button {
-    border-color: var(--color-gray-200, currentColor);
+    border-color: var(--color-slate-200, currentColor);
   }
 }

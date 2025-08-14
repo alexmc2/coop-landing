@@ -1,35 +1,35 @@
-"use client";
+'use client';
 
-import { useState, Fragment } from "react";
-import Image from "next/image";
-import { TabGroup, Tab, TabList, TabPanel, TabPanels } from "@headlessui/react";
-import { Transition } from "@headlessui/react";
-import CarouselImg01 from "@/public/images/carousel-01.png";
-import CarouselImg02 from "@/public/images/carousel-02.png";
-import CarouselImg03 from "@/public/images/carousel-03.png";
-import SmallTestimonialImg from "@/public/images/small-testimonial.jpg";
+import { useState, Fragment } from 'react';
+import Image from 'next/image';
+import { TabGroup, Tab, TabList, TabPanel, TabPanels } from '@headlessui/react';
+import { Transition } from '@headlessui/react';
+import CarouselImg01 from '@/public/images/carousel-01.png';
+import CarouselImg02 from '@/public/images/carousel-02.png';
+import CarouselImg03 from '@/public/images/carousel-03.png';
+import SmallTestimonialImg from '@/public/images/small-testimonial.jpg';
 
 const tabs = [
   {
-    title: "Strategic Sync",
+    title: 'Strategic Sync',
     description:
-      "Remove corners from the avatars and transform the way your team work.",
+      'Remove corners from the avatars and transform the way your team work.',
     img: CarouselImg01,
-    imgAlt: "Carousel image 01",
+    imgAlt: 'Carousel image 01',
   },
   {
-    title: "Feedback Loop",
+    title: 'Feedback Loop',
     description:
-      "Best-in-class design practices to keep your work safe and secure.",
+      'Best-in-class design practices to keep your work safe and secure.',
     img: CarouselImg02,
-    imgAlt: "Carousel image 02",
+    imgAlt: 'Carousel image 02',
   },
   {
-    title: "Enterprise-Ready",
+    title: 'Enterprise-Ready',
     description:
-      "Built for teams of all sizes. From early-stage startups to global enterprises.",
+      'Built for teams of all sizes. From early-stage startups to global enterprises.',
     img: CarouselImg03,
-    imgAlt: "Carousel image 03",
+    imgAlt: 'Carousel image 03',
   },
 ];
 
@@ -51,7 +51,7 @@ export default function SplitCarousel() {
                 </div>
                 <div className="relative mb-6 border-l [border-image:linear-gradient(to_bottom,transparent,--theme(--color-slate-400/.25),transparent)1] after:absolute after:left-0 after:top-0 after:h-4 after:w-px after:origin-bottom after:-translate-y-full after:animate-shine after:bg-[linear-gradient(180deg,transparent,--theme(--color-indigo-500/.5)_25%,--theme(--color-indigo-500)_50%,--theme(--color-indigo-500/.5)_75%,transparent)] after:opacity-0">
                   <div className="mb-4">
-                    <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-indigo-200),var(--color-gray-50),var(--color-indigo-300),var(--color-gray-200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
+                    <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-slate-200),var(--color-indigo-200),var(--color-slate-50),var(--color-indigo-300),var(--color-slate-200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
                       Improve efficiency & global coverage
                     </h2>
                     <p className="text-indigo-200/65">
@@ -66,10 +66,18 @@ export default function SplitCarousel() {
                     {tabs.map((tab, index) => (
                       <Tab key={index} as={Fragment}>
                         <button
-                          className={`-mx-2 flex gap-2 p-2 text-left transition-opacity focus-visible:outline-hidden ui-focus-visible:outline-none ui-focus-visible:ring ui-focus-visible:ring-indigo-300 ${selectedTab !== index ? "opacity-50 hover:opacity-70" : ""}}`}
+                          className={`-mx-2 flex gap-2 p-2 text-left transition-opacity focus-visible:outline-hidden ui-focus-visible:outline-none ui-focus-visible:ring ui-focus-visible:ring-indigo-300 ${
+                            selectedTab !== index
+                              ? 'opacity-50 hover:opacity-70'
+                              : ''
+                          }}`}
                         >
                           <svg
-                            className={`shrink-0 ${selectedTab !== index ? "fill-gray-600" : "fill-indigo-500"}`}
+                            className={`shrink-0 ${
+                              selectedTab !== index
+                                ? 'fill-slate-600'
+                                : 'fill-indigo-500'
+                            }`}
                             xmlns="http://www.w3.org/2000/svg"
                             width="16"
                             height="16"
@@ -77,10 +85,10 @@ export default function SplitCarousel() {
                             <path d="m14.092 5.207-8.207 8.207-3.592-3.591 1.414-1.415 2.178 2.178 6.793-6.793 1.414 1.414Z" />
                           </svg>
                           <span>
-                            <span className="font-medium text-gray-200">
+                            <span className="font-medium text-slate-200">
                               {tab.title}
                             </span>
-                            <span className="text-gray-700"> - </span>
+                            <span className="text-slate-700"> - </span>
                             <span className="text-indigo-200/65">
                               {tab.description}
                             </span>
@@ -91,7 +99,7 @@ export default function SplitCarousel() {
                   </TabList>
                 </div>
                 <div>
-                  <p className="mb-4 font-nacelle text-gray-200">
+                  <p className="mb-4 font-nacelle text-slate-200">
                     “I was blown away by how easy it was to create my content
                     using this tool! Within a few hours, I had a
                     professional-looking flow up and running.”
@@ -104,9 +112,9 @@ export default function SplitCarousel() {
                       height={24}
                       alt="Small testimonial"
                     />
-                    <div className="text-sm font-medium text-gray-200">
+                    <div className="text-sm font-medium text-slate-200">
                       <span>Chris Pick</span>
-                      <span className="text-gray-700"> - </span>
+                      <span className="text-slate-700"> - </span>
                       <a
                         className="text-indigo-200/65 transition-colors hover:text-indigo-500"
                         href="#0"

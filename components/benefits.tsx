@@ -1,16 +1,16 @@
-import Image from "next/image";
+import Image from 'next/image';
 
-import WorldMapImg from "@/public/images/worldmap.png";
-import BlurredShape02Img from "@/public/images/blurred-shape-02.svg";
-import WorldUserImg01 from "@/public/images/world-user-01.jpg";
-import WorldUserImg02 from "@/public/images/world-user-02.jpg";
-import WorldUserImg03 from "@/public/images/world-user-03.jpg";
-import WorldUserImg04 from "@/public/images/world-user-04.jpg";
-import WorldUserImg05 from "@/public/images/world-user-05.jpg";
-import WorldUserImg06 from "@/public/images/world-user-06.jpg";
-import WorldUserImg07 from "@/public/images/world-user-07.jpg";
-import WorldUserImg08 from "@/public/images/world-user-08.jpg";
-import LargeTestimonialImg02 from "@/public/images/large-testimonial-02.jpg";
+import WorldMapImg from '@/public/images/worldmap.png';
+import BlurredShape02Img from '@/public/images/blurred-shape-02.svg';
+import WorldUserImg01 from '@/public/images/world-user-01.jpg';
+import WorldUserImg02 from '@/public/images/world-user-02.jpg';
+import WorldUserImg03 from '@/public/images/world-user-03.jpg';
+import WorldUserImg04 from '@/public/images/world-user-04.jpg';
+import WorldUserImg05 from '@/public/images/world-user-05.jpg';
+import WorldUserImg06 from '@/public/images/world-user-06.jpg';
+import WorldUserImg07 from '@/public/images/world-user-07.jpg';
+import WorldUserImg08 from '@/public/images/world-user-08.jpg';
+import LargeTestimonialImg02 from '@/public/images/large-testimonial-02.jpg';
 
 export default function Benefits() {
   return (
@@ -19,7 +19,7 @@ export default function Benefits() {
         <div className="border-t py-12 [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-400/.25),transparent)1] md:py-20">
           {/* Section header */}
           <div className="mx-auto max-w-3xl pb-12 text-center">
-            <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-indigo-200),var(--color-gray-50),var(--color-indigo-300),var(--color-gray-200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
+            <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-slate-200),var(--color-indigo-200),var(--color-slate-50),var(--color-indigo-300),var(--color-slate-200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
               Seeking ambitious problem solvers
             </h2>
             <p className="text-lg text-indigo-200/65">
@@ -119,7 +119,7 @@ export default function Benefits() {
                 {/* People pics */}
                 <Image
                   className="absolute rounded-full max-sm:scale-75!"
-                  style={{ top: "22%", left: "52%" }}
+                  style={{ top: '22%', left: '52%' }}
                   src={WorldUserImg01}
                   width={32}
                   height={32}
@@ -128,7 +128,7 @@ export default function Benefits() {
                 />
                 <Image
                   className="absolute rounded-full max-sm:scale-75!"
-                  style={{ top: "50%", left: "58%" }}
+                  style={{ top: '50%', left: '58%' }}
                   src={WorldUserImg02}
                   width={48}
                   height={48}
@@ -138,7 +138,7 @@ export default function Benefits() {
                 />
                 <Image
                   className="absolute rounded-full max-sm:scale-75!"
-                  style={{ top: "8.5%", left: "70.5%" }}
+                  style={{ top: '8.5%', left: '70.5%' }}
                   src={WorldUserImg03}
                   width={56}
                   height={56}
@@ -148,7 +148,7 @@ export default function Benefits() {
                 />
                 <Image
                   className="absolute rounded-full max-sm:scale-75!"
-                  style={{ top: "34%", left: "76.5%" }}
+                  style={{ top: '34%', left: '76.5%' }}
                   src={WorldUserImg04}
                   width={72}
                   height={72}
@@ -158,7 +158,7 @@ export default function Benefits() {
                 />
                 <Image
                   className="absolute rounded-full max-sm:scale-75!"
-                  style={{ top: "29.5%", left: "8.5%" }}
+                  style={{ top: '29.5%', left: '8.5%' }}
                   src={WorldUserImg05}
                   width={48}
                   height={48}
@@ -168,7 +168,7 @@ export default function Benefits() {
                 />
                 <Image
                   className="absolute rounded-full max-sm:scale-75!"
-                  style={{ top: "56%", left: "19%" }}
+                  style={{ top: '56%', left: '19%' }}
                   src={WorldUserImg06}
                   width={56}
                   height={56}
@@ -178,7 +178,7 @@ export default function Benefits() {
                 />
                 <Image
                   className="absolute rounded-full max-sm:scale-75!"
-                  style={{ top: "20%", left: "24.5%" }}
+                  style={{ top: '20%', left: '24.5%' }}
                   src={WorldUserImg07}
                   width={64}
                   height={64}
@@ -188,7 +188,7 @@ export default function Benefits() {
                 />
                 <Image
                   className="absolute rounded-full max-sm:scale-75!"
-                  style={{ top: "39%", left: "43%" }}
+                  style={{ top: '39%', left: '43%' }}
                   src={WorldUserImg08}
                   width={40}
                   height={40}
@@ -210,14 +210,14 @@ export default function Benefits() {
                   height={40}
                   alt="Large testimonial"
                 />
-                <p className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-indigo-200),var(--color-gray-50),var(--color-indigo-300),var(--color-gray-200))] bg-[length:200%_auto] bg-clip-text pb-3 font-nacelle text-xl font-semibold text-transparent">
+                <p className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-slate-200),var(--color-indigo-200),var(--color-slate-50),var(--color-indigo-300),var(--color-slate-200))] bg-[length:200%_auto] bg-clip-text pb-3 font-nacelle text-xl font-semibold text-transparent">
                   "I am grateful to Open PRO for encouraging me to expand my
                   horizons and strive for greater achievements, both in my
                   career and in my education."
                 </p>
-                <div className="text-sm font-medium text-gray-200">
+                <div className="text-sm font-medium text-slate-200">
                   <span>Mary Pullgat</span>
-                  <span className="text-gray-700"> - </span>
+                  <span className="text-slate-700"> - </span>
                   <a
                     className="text-indigo-200/65 transition-colors hover:text-indigo-500"
                     href="#0"

@@ -1,21 +1,27 @@
-"use client";
+'use client';
 
-import { useCategoryProvider } from "./category-provider";
+import { useCategoryProvider } from './category-provider';
 
 export default function BlogFilters() {
   const { category, setCategory } = useCategoryProvider();
 
   return (
     <div className="flex justify-center pb-12 max-md:hidden md:pb-20">
-      <div className="relative inline-flex flex-wrap justify-center rounded-[1.25rem] bg-gray-800/40 p-1">
+      <div className="relative inline-flex flex-wrap justify-center rounded-[1.25rem] bg-slate-800/40 p-1">
         {/* Button #1 */}
         <button
-          className={`flex h-8 flex-1 items-center gap-2.5 whitespace-nowrap rounded-full px-3 text-sm font-medium transition-colors focus-visible:outline-hidden focus-visible:ring-3 focus-visible:ring-indigo-200 ${category === "All" ? "relative bg-linear-to-b from-gray-900 via-gray-800/60 to-gray-900 before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_bottom,--theme(--color-indigo-500/0),--theme(--color-indigo-500/.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)]" : "opacity-65 transition-opacity hover:opacity-90"}`}
-          aria-pressed={category === "All"}
-          onClick={() => setCategory("All")}
+          className={`flex h-8 flex-1 items-center gap-2.5 whitespace-nowrap rounded-full px-3 text-sm font-medium transition-colors focus-visible:outline-hidden focus-visible:ring-3 focus-visible:ring-indigo-200 ${
+            category === 'All'
+              ? 'relative bg-linear-to-b from-slate-900 via-slate-800/60 to-slate-900 before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_bottom,--theme(--color-indigo-500/0),--theme(--color-indigo-500/.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)]'
+              : 'opacity-65 transition-opacity hover:opacity-90'
+          }`}
+          aria-pressed={category === 'All'}
+          onClick={() => setCategory('All')}
         >
           <svg
-            className={`fill-current ${category === "All" ? "text-indigo-500" : "text-gray-600"}`}
+            className={`fill-current ${
+              category === 'All' ? 'text-indigo-500' : 'text-slate-600'
+            }`}
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
@@ -26,12 +32,18 @@ export default function BlogFilters() {
         </button>
         {/* Button #2 */}
         <button
-          className={`flex h-8 flex-1 items-center gap-2.5 whitespace-nowrap rounded-full px-3 text-sm font-medium transition-colors focus-visible:outline-hidden focus-visible:ring-3 focus-visible:ring-indigo-200 ${category === "AI Content" ? "relative bg-linear-to-b from-gray-900 via-gray-800/60 to-gray-900 before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_bottom,--theme(--color-indigo-500/0),--theme(--color-indigo-500/.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)]" : "opacity-65 transition-opacity hover:opacity-90"}`}
-          aria-pressed={category === "AI Content"}
-          onClick={() => setCategory("AI Content")}
+          className={`flex h-8 flex-1 items-center gap-2.5 whitespace-nowrap rounded-full px-3 text-sm font-medium transition-colors focus-visible:outline-hidden focus-visible:ring-3 focus-visible:ring-indigo-200 ${
+            category === 'AI Content'
+              ? 'relative bg-linear-to-b from-slate-900 via-slate-800/60 to-slate-900 before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_bottom,--theme(--color-indigo-500/0),--theme(--color-indigo-500/.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)]'
+              : 'opacity-65 transition-opacity hover:opacity-90'
+          }`}
+          aria-pressed={category === 'AI Content'}
+          onClick={() => setCategory('AI Content')}
         >
           <svg
-            className={`fill-current ${category === "AI Content" ? "text-indigo-500" : "text-gray-600"}`}
+            className={`fill-current ${
+              category === 'AI Content' ? 'text-indigo-500' : 'text-slate-600'
+            }`}
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
@@ -42,12 +54,18 @@ export default function BlogFilters() {
         </button>
         {/* Button #3 */}
         <button
-          className={`flex h-8 flex-1 items-center gap-2.5 whitespace-nowrap rounded-full px-3 text-sm font-medium transition-colors focus-visible:outline-hidden focus-visible:ring-3 focus-visible:ring-indigo-200 ${category === "Automation" ? "relative bg-linear-to-b from-gray-900 via-gray-800/60 to-gray-900 before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_bottom,--theme(--color-indigo-500/0),--theme(--color-indigo-500/.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)]" : "opacity-65 transition-opacity hover:opacity-90"}`}
-          aria-pressed={category === "Automation"}
-          onClick={() => setCategory("Automation")}
+          className={`flex h-8 flex-1 items-center gap-2.5 whitespace-nowrap rounded-full px-3 text-sm font-medium transition-colors focus-visible:outline-hidden focus-visible:ring-3 focus-visible:ring-indigo-200 ${
+            category === 'Automation'
+              ? 'relative bg-linear-to-b from-slate-900 via-slate-800/60 to-slate-900 before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_bottom,--theme(--color-indigo-500/0),--theme(--color-indigo-500/.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)]'
+              : 'opacity-65 transition-opacity hover:opacity-90'
+          }`}
+          aria-pressed={category === 'Automation'}
+          onClick={() => setCategory('Automation')}
         >
           <svg
-            className={`fill-current ${category === "Automation" ? "text-indigo-500" : "text-gray-600"}`}
+            className={`fill-current ${
+              category === 'Automation' ? 'text-indigo-500' : 'text-slate-600'
+            }`}
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
@@ -58,12 +76,20 @@ export default function BlogFilters() {
         </button>
         {/* Button #4 */}
         <button
-          className={`flex h-8 flex-1 items-center gap-2.5 whitespace-nowrap rounded-full px-3 text-sm font-medium transition-colors focus-visible:outline-hidden focus-visible:ring-3 focus-visible:ring-indigo-200 ${category === "Customer Service" ? "relative bg-linear-to-b from-gray-900 via-gray-800/60 to-gray-900 before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_bottom,--theme(--color-indigo-500/0),--theme(--color-indigo-500/.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)]" : "opacity-65 transition-opacity hover:opacity-90"}`}
-          aria-pressed={category === "Customer Service"}
-          onClick={() => setCategory("Customer Service")}
+          className={`flex h-8 flex-1 items-center gap-2.5 whitespace-nowrap rounded-full px-3 text-sm font-medium transition-colors focus-visible:outline-hidden focus-visible:ring-3 focus-visible:ring-indigo-200 ${
+            category === 'Customer Service'
+              ? 'relative bg-linear-to-b from-slate-900 via-slate-800/60 to-slate-900 before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_bottom,--theme(--color-indigo-500/0),--theme(--color-indigo-500/.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)]'
+              : 'opacity-65 transition-opacity hover:opacity-90'
+          }`}
+          aria-pressed={category === 'Customer Service'}
+          onClick={() => setCategory('Customer Service')}
         >
           <svg
-            className={`fill-current ${category === "Customer Service" ? "text-indigo-500" : "text-gray-600"}`}
+            className={`fill-current ${
+              category === 'Customer Service'
+                ? 'text-indigo-500'
+                : 'text-slate-600'
+            }`}
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
@@ -74,12 +100,18 @@ export default function BlogFilters() {
         </button>
         {/* Button #5 */}
         <button
-          className={`flex h-8 flex-1 items-center gap-2.5 whitespace-nowrap rounded-full px-3 text-sm font-medium transition-colors focus-visible:outline-hidden focus-visible:ring-3 focus-visible:ring-indigo-200 ${category === "Engineering" ? "relative bg-linear-to-b from-gray-900 via-gray-800/60 to-gray-900 before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_bottom,--theme(--color-indigo-500/0),--theme(--color-indigo-500/.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)]" : "opacity-65 transition-opacity hover:opacity-90"}`}
-          aria-pressed={category === "Engineering"}
-          onClick={() => setCategory("Engineering")}
+          className={`flex h-8 flex-1 items-center gap-2.5 whitespace-nowrap rounded-full px-3 text-sm font-medium transition-colors focus-visible:outline-hidden focus-visible:ring-3 focus-visible:ring-indigo-200 ${
+            category === 'Engineering'
+              ? 'relative bg-linear-to-b from-slate-900 via-slate-800/60 to-slate-900 before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_bottom,--theme(--color-indigo-500/0),--theme(--color-indigo-500/.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)]'
+              : 'opacity-65 transition-opacity hover:opacity-90'
+          }`}
+          aria-pressed={category === 'Engineering'}
+          onClick={() => setCategory('Engineering')}
         >
           <svg
-            className={`fill-current ${category === "Engineering" ? "text-indigo-500" : "text-gray-600"}`}
+            className={`fill-current ${
+              category === 'Engineering' ? 'text-indigo-500' : 'text-slate-600'
+            }`}
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"

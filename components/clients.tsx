@@ -5,16 +5,16 @@ export default function Clients() {
         <div className="border-t py-12 [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-400/.25),transparent)1] md:py-20">
           {/* Section header */}
           <div className="mx-auto max-w-3xl pb-12 text-center md:pb-20">
-            <h2 className="aos-init aos-animate animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-indigo-200),var(--color-gray-50),var(--color-indigo-300),var(--color-gray-200))] bg-[length:200%_auto] bg-clip-text font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
+            <h2 className="aos-init aos-animate animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-slate-200),var(--color-indigo-200),var(--color-slate-50),var(--color-indigo-300),var(--color-slate-200))] bg-[length:200%_auto] bg-clip-text font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
               Our customers span the globe
             </h2>
           </div>
           {/* Items */}
           <div className="grid grid-cols-2 gap-2 md:grid-cols-4">
             {/* Item */}
-            <div className="relative flex h-24 items-center justify-center rounded-2xl p-2 before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_right,var(--color-gray-800),var(--color-gray-700),var(--color-gray-800))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)]">
+            <div className="relative flex h-24 items-center justify-center rounded-2xl p-2 before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_right,var(--color-slate-800),var(--color-slate-700),var(--color-slate-800))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)]">
               <svg
-                className="max-w-full fill-gray-300"
+                className="max-w-full fill-slate-300"
                 xmlns="http://www.w3.org/2000/svg"
                 width={110}
                 height={21}
@@ -27,9 +27,9 @@ export default function Clients() {
               </svg>
             </div>
             {/* Item */}
-            <div className="relative flex h-24 items-center justify-center rounded-2xl p-2 before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_right,var(--color-gray-800),var(--color-gray-700),var(--color-gray-800))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)]">
+            <div className="relative flex h-24 items-center justify-center rounded-2xl p-2 before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_right,var(--color-slate-800),var(--color-slate-700),var(--color-slate-800))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)]">
               <svg
-                className="max-w-full fill-gray-300"
+                className="max-w-full fill-slate-300"
                 xmlns="http://www.w3.org/2000/svg"
                 width={86}
                 height={18}
@@ -42,9 +42,9 @@ export default function Clients() {
               </svg>
             </div>
             {/* Item */}
-            <div className="relative flex h-24 items-center justify-center rounded-2xl p-2 before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_right,var(--color-gray-800),var(--color-gray-700),var(--color-gray-800))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)]">
+            <div className="relative flex h-24 items-center justify-center rounded-2xl p-2 before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_right,var(--color-slate-800),var(--color-slate-700),var(--color-slate-800))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)]">
               <svg
-                className="max-w-full fill-gray-300"
+                className="max-w-full fill-slate-300"
                 xmlns="http://www.w3.org/2000/svg"
                 width={94}
                 height={39}
@@ -57,9 +57,9 @@ export default function Clients() {
               </svg>
             </div>
             {/* Item */}
-            <div className="relative flex h-24 items-center justify-center rounded-2xl p-2 before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_right,var(--color-gray-800),var(--color-gray-700),var(--color-gray-800))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)]">
+            <div className="relative flex h-24 items-center justify-center rounded-2xl p-2 before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_right,var(--color-slate-800),var(--color-slate-700),var(--color-slate-800))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)]">
               <svg
-                className="max-w-full fill-gray-300"
+                className="max-w-full fill-slate-300"
                 xmlns="http://www.w3.org/2000/svg"
                 width={106}
                 height={35}

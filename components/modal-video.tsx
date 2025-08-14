@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import { useState, useRef } from "react";
-import type { StaticImageData } from "next/image";
-import { Dialog, DialogBackdrop, DialogPanel } from "@headlessui/react";
-import Image from "next/image";
-import SecondaryIllustration from "@/public/images/secondary-illustration.svg";
+import { useState, useRef } from 'react';
+import type { StaticImageData } from 'next/image';
+import { Dialog, DialogBackdrop, DialogPanel } from '@headlessui/react';
+import Image from 'next/image';
+import SecondaryIllustration from '@/public/images/secondary-illustration.svg';
 
 interface ModalVideoProps {
   thumb: StaticImageData;
@@ -54,9 +54,9 @@ export default function ModalVideo({
         data-aos="fade-up"
         data-aos-delay={200}
       >
-        <figure className="relative overflow-hidden rounded-2xl before:absolute before:inset-0 before:-z-10 before:bg-linear-to-br before:from-gray-900 before:via-indigo-500/20 before:to-gray-900">
+        <figure className="relative overflow-hidden rounded-2xl before:absolute before:inset-0 before:-z-10 before:bg-linear-to-br before:from-slate-900 before:via-indigo-500/20 before:to-slate-900">
           <Image
-            className="opacity-50 grayscale"
+            className="opacity-50 slatescale"
             src={thumb}
             width={thumbWidth}
             height={thumbHeight}
@@ -65,7 +65,7 @@ export default function ModalVideo({
           />
         </figure>
         {/* Play icon */}
-        <span className="pointer-events-none absolute p-2.5 before:absolute before:inset-0 before:rounded-full before:bg-gray-950 before:duration-300 group-hover:before:scale-110">
+        <span className="pointer-events-none absolute p-2.5 before:absolute before:inset-0 before:rounded-full before:bg-slate-950 before:duration-300 group-hover:before:scale-110">
           <span className="relative flex items-center gap-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -93,9 +93,9 @@ export default function ModalVideo({
                 </linearGradient>
               </defs>
             </svg>
-            <span className="text-sm font-medium leading-tight text-gray-300">
+            <span className="text-sm font-medium leading-tight text-slate-300">
               Watch Demo
-              <span className="text-gray-600"> - </span>
+              <span className="text-slate-600"> - </span>
               3:47
             </span>
           </span>

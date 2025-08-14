@@ -1,4 +1,4 @@
-import Image, { StaticImageData } from "next/image";
+import Image, { StaticImageData } from 'next/image';
 
 interface PostImageProps {
   alt: string;
@@ -9,9 +9,9 @@ interface PostImageProps {
 export default function PostImage({ alt, caption, ...props }: PostImageProps) {
   return (
     <figure>
-      <div className="relative overflow-hidden rounded-2xl border border-gray-800/80 before:absolute before:inset-0 before:-z-10 before:bg-linear-to-br before:from-gray-900 before:via-indigo-500/50 before:to-indigo-500 before:opacity-50">
+      <div className="relative overflow-hidden rounded-2xl border border-slate-800/80 before:absolute before:inset-0 before:-z-10 before:bg-linear-to-br before:from-slate-900 before:via-indigo-500/50 before:to-indigo-500 before:opacity-50">
         <Image
-          className="m-0 w-full opacity-70 grayscale"
+          className="m-0 w-full opacity-70 slatescale"
           {...props}
           alt={alt}
         />

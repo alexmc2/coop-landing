@@ -1,28 +1,28 @@
-import Image from "next/image";
+import Image from 'next/image';
 
-import BlurredShapeImg from "@/public/images/blurred-shape.svg";
+import BlurredShapeImg from '@/public/images/blurred-shape.svg';
 
 const position = [
   {
-    title: "Lead Product Designer",
+    title: 'Lead Product Designer',
     description:
       "You'll be joing the Experience Design Team as a Lead Product Designer. You'll interface daily with developers - encouraging and advancing best practices in software.",
-    location: "Anywhere (EU timezone)",
-    salary: "$100K - $120K",
+    location: 'Anywhere (EU timezone)',
+    salary: '$100K - $120K',
   },
   {
-    title: "Principal Software Engineer",
+    title: 'Principal Software Engineer',
     description:
       "You'll be joing the Experience Design Team as a Lead Product Designer. You'll interface daily with developers - encouraging and advancing best practices in software.",
-    location: "Anywhere (EU timezone)",
-    salary: "$140K - $180K",
+    location: 'Anywhere (EU timezone)',
+    salary: '$140K - $180K',
   },
   {
-    title: "Marketing Operations Manager",
+    title: 'Marketing Operations Manager',
     description:
       "You'll be joing the Experience Design Team as a Lead Product Designer. You'll interface daily with developers - encouraging and advancing best practices in software.",
-    location: "Anywhere (EU timezone)",
-    salary: "$70K - $120K",
+    location: 'Anywhere (EU timezone)',
+    salary: '$70K - $120K',
   },
 ];
 
@@ -59,7 +59,7 @@ export default function Career() {
                     <div>
                       <div className="mb-2">
                         <a
-                          className="flex items-center justify-between font-nacelle text-lg font-semibold text-gray-200 transition before:absolute before:inset-0 hover:text-indigo-500"
+                          className="flex items-center justify-between font-nacelle text-lg font-semibold text-slate-200 transition before:absolute before:inset-0 hover:text-indigo-500"
                           href="#0"
                         >
                           {position.title}
@@ -84,7 +84,7 @@ export default function Career() {
                           </svg>
                           <span>{position.location}</span>
                         </div>
-                        <span className="mx-3 text-gray-700"> - </span>
+                        <span className="mx-3 text-slate-700"> - </span>
                         <div className="inline-flex items-center">
                           <svg
                             className="mr-2 shrink-0"

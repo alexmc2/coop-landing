@@ -1,7 +1,7 @@
-import Image from "next/image";
-import Illustration from "@/public/images/page-illustration.svg";
-import BlurredShapeGray from "@/public/images/blurred-shape-gray.svg";
-import BlurredShape from "@/public/images/blurred-shape.svg";
+import Image from 'next/image';
+import Illustration from '@/public/images/page-illustration.svg';
+import BlurredShapeslate from '@/public/images/blurred-shape-slate.svg';
+import BlurredShape from '@/public/images/blurred-shape.svg';
 
 export default function PageIllustration({
   multiple = false,
@@ -30,7 +30,7 @@ export default function PageIllustration({
           >
             <Image
               className="max-w-none"
-              src={BlurredShapeGray}
+              src={BlurredShapeslate}
               width={760}
               height={668}
               alt="Blurred shape"

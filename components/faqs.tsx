@@ -2,17 +2,17 @@ export default function Faqs() {
   return (
     <section>
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="border-t border-gray-800 py-12 md:py-20 lg:border-0 lg:pt-0">
+        <div className="border-t border-slate-800 py-12 md:py-20 lg:border-0 lg:pt-0">
           {/* Section header */}
           <div className="mb-12">
-            <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-indigo-200),var(--color-gray-50),var(--color-indigo-300),var(--color-gray-200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-2xl font-semibold text-transparent md:text-3xl">
+            <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-slate-200),var(--color-indigo-200),var(--color-slate-50),var(--color-indigo-300),var(--color-slate-200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-2xl font-semibold text-transparent md:text-3xl">
               Frequently Asked Questions
             </h2>
           </div>
           {/* Faqs */}
           <ul className="grid gap-8 md:grid-cols-2 lg:gap-y-12 xl:gap-x-16">
             <li>
-              <h4 className="mb-2 font-nacelle text-lg font-semibold text-gray-200">
+              <h4 className="mb-2 font-nacelle text-lg font-semibold text-slate-200">
                 What payment options does Open PRO accept?
               </h4>
               <p className="text-[1rem] text-indigo-200/65">
@@ -22,7 +22,7 @@ export default function Faqs() {
               </p>
             </li>
             <li>
-              <h4 className="mb-2 font-nacelle text-lg font-semibold text-gray-200">
+              <h4 className="mb-2 font-nacelle text-lg font-semibold text-slate-200">
                 Do I need to be a user to view my data?
               </h4>
               <p className="text-[1rem] text-indigo-200/65">
@@ -32,7 +32,7 @@ export default function Faqs() {
               </p>
             </li>
             <li>
-              <h4 className="mb-2 font-nacelle text-lg font-semibold text-gray-200">
+              <h4 className="mb-2 font-nacelle text-lg font-semibold text-slate-200">
                 What if I want to cancel?
               </h4>
               <p className="text-[1rem] text-indigo-200/65">
@@ -42,7 +42,7 @@ export default function Faqs() {
               </p>
             </li>
             <li>
-              <h4 className="mb-2 font-nacelle text-lg font-semibold text-gray-200">
+              <h4 className="mb-2 font-nacelle text-lg font-semibold text-slate-200">
                 What happens if I hit my usage limit?
               </h4>
               <p className="text-[1rem] text-indigo-200/65">
@@ -52,7 +52,7 @@ export default function Faqs() {
               </p>
             </li>
             <li>
-              <h4 className="mb-2 font-nacelle text-lg font-semibold text-gray-200">
+              <h4 className="mb-2 font-nacelle text-lg font-semibold text-slate-200">
                 Do you offer a discount for non-profits?
               </h4>
               <p className="text-[1rem] text-indigo-200/65">
@@ -62,7 +62,7 @@ export default function Faqs() {
               </p>
             </li>
             <li>
-              <h4 className="mb-2 font-nacelle text-lg font-semibold text-gray-200">
+              <h4 className="mb-2 font-nacelle text-lg font-semibold text-slate-200">
                 Will my data be private and safe?
               </h4>
               <p className="text-[1rem] text-indigo-200/65">

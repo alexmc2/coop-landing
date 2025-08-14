@@ -1,5 +1,5 @@
-import { getBlogPosts } from "@/components/mdx/utils";
-import PostItem from "../app/(default)/blog/post-item";
+import { getBlogPosts } from '@/components/mdx/utils';
+import PostItem from '../app/(default)/blog/post-item';
 
 export default function News() {
   const allBlogs = getBlogPosts();
@@ -16,7 +16,7 @@ export default function News() {
   return (
     <section>
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="border-t border-gray-800 py-12 md:py-20">
+        <div className="border-t border-slate-800 py-12 md:py-20">
           {/* Section header */}
           <div className="mx-auto max-w-3xl pb-12 text-center md:pb-20">
             <h2 className="h2" data-aos="fade-up">
