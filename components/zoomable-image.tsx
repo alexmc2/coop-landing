@@ -1,3 +1,5 @@
+'use client';
+
 // components/members/common/zoomable-image.tsx
 import Image from 'next/image';
 import {
