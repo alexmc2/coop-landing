@@ -83,7 +83,7 @@ export default function Team() {
         <div className="border-t py-12 [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-400/.25),transparent)1] md:py-20">
           {/* Section header */}
           <div className="mx-auto max-w-3xl pb-12 text-center md:pb-20">
-            <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-slate-200),var(--color-indigo-200),var(--color-slate-50),var(--color-indigo-300),var(--color-slate-200))] bg-[length:200%_auto] bg-clip-text font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
+            <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-slate-200),var(--color-indigo-200),var(--color-slate-50),var(--color-indigo-300),var(--color-slate-200))] bg-[length:200%_auto] bg-clip-text  text-3xl font-semibold text-transparent md:text-4xl">
               It's all about the people
             </h2>
           </div>
@@ -100,10 +100,10 @@ export default function Team() {
                     alt={`Team member ${member.name}`}
                   />
                 </div>
-                <div className="mb-1 font-nacelle text-lg text-slate-200">
+                <div className="mb-1  text-lg text-slate-200">
                   {member.name}
                 </div>
-                <p className="text-sm text-indigo-200/65">{member.role}</p>
+                <p className="text-sm text-indigo-200/90">{member.role}</p>
               </div>
             ))}
           </div>

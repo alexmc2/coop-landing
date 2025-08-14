@@ -19,10 +19,10 @@ export default function Benefits() {
         <div className="border-t py-12 [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-400/.25),transparent)1] md:py-20">
           {/* Section header */}
           <div className="mx-auto max-w-3xl pb-12 text-center">
-            <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-slate-200),var(--color-indigo-200),var(--color-slate-50),var(--color-indigo-300),var(--color-slate-200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
+            <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-slate-200),var(--color-indigo-200),var(--color-slate-50),var(--color-indigo-300),var(--color-slate-200))] bg-[length:200%_auto] bg-clip-text pb-4  text-3xl font-semibold text-transparent md:text-4xl">
               Seeking ambitious problem solvers
             </h2>
-            <p className="text-lg text-indigo-200/65">
+            <p className="text-lg text-indigo-200/90">
               At Open Pro, it's our mission to improve the quality of every
               thing. Helping our customers create incredible products and
               services is the end goal—but everything starts with our team.
@@ -30,7 +30,7 @@ export default function Benefits() {
           </div>
           {/* Check list */}
           <div className="flex justify-center pb-16">
-            <ul className="inline-flex flex-col flex-wrap justify-center gap-x-10 gap-y-4 text-[1rem] text-indigo-200/65 sm:flex sm:flex-row sm:items-center">
+            <ul className="inline-flex flex-col flex-wrap justify-center gap-x-10 gap-y-4 text-[1rem] text-indigo-200/90 sm:flex sm:flex-row sm:items-center">
               <li className="flex items-center">
                 <svg
                   className="mr-3 shrink-0"
@@ -210,7 +210,7 @@ export default function Benefits() {
                   height={40}
                   alt="Large testimonial"
                 />
-                <p className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-slate-200),var(--color-indigo-200),var(--color-slate-50),var(--color-indigo-300),var(--color-slate-200))] bg-[length:200%_auto] bg-clip-text pb-3 font-nacelle text-xl font-semibold text-transparent">
+                <p className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-slate-200),var(--color-indigo-200),var(--color-slate-50),var(--color-indigo-300),var(--color-slate-200))] bg-[length:200%_auto] bg-clip-text pb-3  text-xl font-semibold text-transparent">
                   "I am grateful to Open PRO for encouraging me to expand my
                   horizons and strive for greater achievements, both in my
                   career and in my education."
@@ -219,7 +219,7 @@ export default function Benefits() {
                   <span>Mary Pullgat</span>
                   <span className="text-slate-700"> - </span>
                   <a
-                    className="text-indigo-200/65 transition-colors hover:text-indigo-500"
+                    className="text-indigo-200/90 transition-colors hover:text-indigo-500"
                     href="#0"
                   >
                     Software Engineer

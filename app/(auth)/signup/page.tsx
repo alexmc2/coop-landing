@@ -12,7 +12,7 @@ export default function SignUp() {
         <div className="py-12 md:py-20">
           {/* Section header */}
           <div className="pb-12 text-center">
-            <h1 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-slate-200),var(--color-indigo-200),var(--color-slate-50),var(--color-indigo-300),var(--color-slate-200))] bg-[length:200%_auto] bg-clip-text font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
+            <h1 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-slate-200),var(--color-indigo-200),var(--color-slate-50),var(--color-indigo-300),var(--color-slate-200))] bg-[length:200%_auto] bg-clip-text  text-3xl font-semibold text-transparent md:text-4xl">
               Create an account
             </h1>
           </div>
@@ -21,7 +21,7 @@ export default function SignUp() {
             <div className="space-y-5">
               <div>
                 <label
-                  className="mb-1 block text-sm font-medium text-indigo-200/65"
+                  className="mb-1 block text-sm font-medium text-indigo-200/90"
                   htmlFor="name"
                 >
                   Name <span className="text-red-500">*</span>
@@ -36,7 +36,7 @@ export default function SignUp() {
               </div>
               <div>
                 <label
-                  className="mb-1 block text-sm font-medium text-indigo-200/65"
+                  className="mb-1 block text-sm font-medium text-indigo-200/90"
                   htmlFor="name"
                 >
                   Company Name <span className="text-red-500">*</span>
@@ -51,7 +51,7 @@ export default function SignUp() {
               </div>
               <div>
                 <label
-                  className="mb-1 block text-sm font-medium text-indigo-200/65"
+                  className="mb-1 block text-sm font-medium text-indigo-200/90"
                   htmlFor="email"
                 >
                   Work Email <span className="text-red-500">*</span>
@@ -65,7 +65,7 @@ export default function SignUp() {
               </div>
               <div>
                 <label
-                  className="block text-sm font-medium text-indigo-200/65"
+                  className="block text-sm font-medium text-indigo-200/90"
                   htmlFor="password"
                 >
                   Password <span className="text-red-500">*</span>
@@ -91,7 +91,7 @@ export default function SignUp() {
             </div>
           </form>
           {/* Bottom link */}
-          <div className="mt-6 text-center text-sm text-indigo-200/65">
+          <div className="mt-6 text-center text-sm text-indigo-200/90">
             Already have an account?{' '}
             <Link className="font-medium text-indigo-500" href="/signin">
               Sign in

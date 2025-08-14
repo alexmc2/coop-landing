@@ -21,7 +21,7 @@ export default function Newsletter() {
             {/* Section header */}
             <div className="pb-12 text-center">
               <div className="mb-3 inline-flex">
-                <div className="relative flex items-center gap-2 rounded-full bg-slate-900/90 p-1 pr-3 text-sm text-indigo-200/65 before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_right,var(--color-slate-800),var(--color-slate-700),var(--color-slate-800))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] after:absolute after:inset-0 after:-z-10 after:backdrop-blur-xs">
+                <div className="relative flex items-center gap-2 rounded-full bg-slate-900/90 p-1 pr-3 text-sm text-indigo-200/90 before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_right,var(--color-slate-800),var(--color-slate-700),var(--color-slate-800))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] after:absolute after:inset-0 after:-z-10 after:backdrop-blur-xs">
                   <div className="-ml-0.5 flex -space-x-2">
                     <Image
                       className="box-content rounded-full border-2 border-slate-900"
@@ -58,11 +58,11 @@ export default function Newsletter() {
                   </span>
                 </div>
               </div>
-              <h1 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-slate-200),var(--color-indigo-200),var(--color-slate-50),var(--color-indigo-300),var(--color-slate-200))] bg-[length:200%_auto] bg-clip-text pb-5 font-nacelle text-4xl font-semibold text-transparent md:text-5xl">
+              <h1 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-slate-200),var(--color-indigo-200),var(--color-slate-50),var(--color-indigo-300),var(--color-slate-200))] bg-[length:200%_auto] bg-clip-text pb-5  text-4xl font-semibold text-transparent md:text-5xl">
                 Join our newsletter
               </h1>
               <div className="mx-auto max-w-3xl">
-                <p className="text-xl text-indigo-200/65">
+                <p className="text-xl text-indigo-200/90">
                   Sign up to get early access to product launches, promotions,
                   and exclusive offers. Join our newsletter today!
                 </p>

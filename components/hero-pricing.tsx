@@ -14,7 +14,7 @@ export default function HeroPricing() {
         <div className="py-12 md:py-20">
           {/* Section header */}
           <div className="text-center">
-            <h1 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-slate-200),var(--color-indigo-200),var(--color-slate-50),var(--color-indigo-300),var(--color-slate-200))] bg-[length:200%_auto] bg-clip-text pb-12 font-nacelle text-4xl font-semibold text-transparent md:text-5xl">
+            <h1 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-slate-200),var(--color-indigo-200),var(--color-slate-50),var(--color-indigo-300),var(--color-slate-200))] bg-[length:200%_auto] bg-clip-text pb-12  text-4xl font-semibold text-transparent md:text-5xl">
               Pick the right plan for your business
             </h1>
           </div>
@@ -39,7 +39,7 @@ export default function HeroPricing() {
                 className="group flex items-center justify-between gap-3 rounded-2xl bg-linear-to-br from-slate-900/50 via-slate-800/25 to-slate-900/50 bg-[length:100%_100%] bg-[center] px-4 py-3 backdrop-blur-xs transition-all duration-300 before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_right,var(--color-slate-800),var(--color-slate-700),var(--color-slate-800))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] hover:bg-[length:400%_100%]"
                 href="#0"
               >
-                <span className="text-indigo-200/65">
+                <span className="text-indigo-200/90">
                   <span className="font-medium text-slate-200">
                     Large team?
                   </span>{' '}

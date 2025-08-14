@@ -5,10 +5,10 @@ export default function Timeline() {
         <div className="pb-12 md:pb-20">
           {/* Section header */}
           <div className="mx-auto max-w-3xl pb-12 text-center md:pb-20">
-            <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-slate-200),var(--color-indigo-200),var(--color-slate-50),var(--color-indigo-300),var(--color-slate-200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
+            <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-slate-200),var(--color-indigo-200),var(--color-slate-50),var(--color-indigo-300),var(--color-slate-200))] bg-[length:200%_auto] bg-clip-text pb-4  text-3xl font-semibold text-transparent md:text-4xl">
               Bringing the world's ideas to life
             </h2>
-            <p className="text-lg text-indigo-200/65">
+            <p className="text-lg text-indigo-200/90">
               We were frustrated because content tools hadn't innovated, so we
               sat down and drew up what we thought a new product could look
               like.
@@ -41,11 +41,11 @@ export default function Timeline() {
                     className="absolute left-0 ml-20 box-content h-2 w-2 -translate-x-1/2 transform rounded-full border-4 border-slate-950 bg-indigo-500"
                     aria-hidden="true"
                   />
-                  <h4 className="font-nacelle text-xl font-semibold text-slate-200">
+                  <h4 className=" text-xl font-semibold text-slate-200">
                     Open PRO was founded in Milan, Italy
                   </h4>
                 </div>
-                <p className="text-[1rem] text-indigo-200/65">
+                <p className="text-[1rem] text-indigo-200/90">
                   Pretium lectus quam id leo. Urna et pharetra pharetra massa
                   massa. Adipiscing enim eu neque aliquam vestibulum morbi
                   blandit cursus risus.
@@ -75,11 +75,11 @@ export default function Timeline() {
                     className="absolute left-0 ml-20 box-content h-2 w-2 -translate-x-1/2 transform rounded-full border-4 border-slate-950 bg-indigo-500"
                     aria-hidden="true"
                   />
-                  <h4 className="font-nacelle text-xl font-semibold text-slate-200">
+                  <h4 className=" text-xl font-semibold text-slate-200">
                     Launched the first Open PRO Advanced plan
                   </h4>
                 </div>
-                <p className="text-[1rem] text-indigo-200/65">
+                <p className="text-[1rem] text-indigo-200/90">
                   Pretium lectus quam id leo. Urna et pharetra pharetra massa
                   massa. Adipiscing enim eu neque aliquam vestibulum morbi
                   blandit cursus risus.
@@ -109,11 +109,11 @@ export default function Timeline() {
                     className="absolute left-0 ml-20 box-content h-2 w-2 -translate-x-1/2 transform rounded-full border-4 border-slate-950 bg-indigo-500"
                     aria-hidden="true"
                   />
-                  <h4 className="font-nacelle text-xl font-semibold text-slate-200">
+                  <h4 className=" text-xl font-semibold text-slate-200">
                     Transitioned to a SaaS business model
                   </h4>
                 </div>
-                <p className="text-[1rem] text-indigo-200/65">
+                <p className="text-[1rem] text-indigo-200/90">
                   Pretium lectus quam id leo. Urna et pharetra pharetra massa
                   massa. Adipiscing enim eu neque aliquam vestibulum morbi
                   blandit cursus risus.
@@ -139,11 +139,11 @@ export default function Timeline() {
                     className="absolute left-0 ml-20 box-content h-2 w-2 -translate-x-1/2 transform rounded-full border-4 border-slate-950 bg-indigo-500"
                     aria-hidden="true"
                   />
-                  <h4 className="font-nacelle text-xl font-semibold text-slate-200">
+                  <h4 className=" text-xl font-semibold text-slate-200">
                     1 million happy customers
                   </h4>
                 </div>
-                <p className="text-[1rem] text-indigo-200/65">
+                <p className="text-[1rem] text-indigo-200/90">
                   Pretium lectus quam id leo. Urna et pharetra pharetra massa
                   massa. Adipiscing enim eu neque aliquam vestibulum morbi
                   blandit cursus risus.

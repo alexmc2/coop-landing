@@ -17,7 +17,7 @@ export default function Pagination() {
       </div>
       <div className="text-sm text-slate-600">
         <span className="text-slate-200">1</span> of
-        <span className="text-indigo-200/65">4</span>
+        <span className="text-indigo-200/90">4</span>
       </div>
       <div>
         <Link

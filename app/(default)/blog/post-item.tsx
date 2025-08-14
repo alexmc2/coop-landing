@@ -42,7 +42,7 @@ export default function PostItem({ ...props }) {
             </li>
           </ul>
         </div>
-        <h3 className="mb-2 font-nacelle text-lg font-semibold">
+        <h3 className="mb-2  text-lg font-semibold">
           <Link
             className="text-slate-200 transition hover:text-white"
             href={`/blog/${props.slug}`}
@@ -63,7 +63,7 @@ export default function PostItem({ ...props }) {
           <span>{props.metadata.author}</span>
           <span className="text-slate-700"> - </span>
           <a
-            className="text-indigo-200/65 transition-colors hover:text-indigo-500"
+            className="text-indigo-200/90 transition-colors hover:text-indigo-500"
             href={props.metadata.authorLink}
           >
             {props.metadata.authorRole}

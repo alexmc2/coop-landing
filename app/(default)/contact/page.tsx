@@ -15,11 +15,11 @@ export default function Contact() {
           <div className="py-12 md:py-20">
             {/* Section header */}
             <div className="pb-12 text-center">
-              <h1 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-slate-200),var(--color-indigo-200),var(--color-slate-50),var(--color-indigo-300),var(--color-slate-200))] bg-[length:200%_auto] bg-clip-text pb-5 font-nacelle text-4xl font-semibold text-transparent md:text-5xl">
+              <h1 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-slate-200),var(--color-indigo-200),var(--color-slate-50),var(--color-indigo-300),var(--color-slate-200))] bg-[length:200%_auto] bg-clip-text pb-5  text-4xl font-semibold text-transparent md:text-5xl">
                 Contact us
               </h1>
               <div className="mx-auto max-w-3xl">
-                <p className="text-xl text-indigo-200/65">
+                <p className="text-xl text-indigo-200/90">
                   We have custom plans to power your business. Tell us your
                   needs, and we'll contact you shortly.
                 </p>
@@ -31,7 +31,7 @@ export default function Contact() {
                 <div className="flex flex-col gap-x-6 gap-y-4 md:flex-row">
                   <div className="flex-1">
                     <label
-                      className="mb-1 block text-sm font-medium text-indigo-200/65"
+                      className="mb-1 block text-sm font-medium text-indigo-200/90"
                       htmlFor="first-name"
                     >
                       Name
@@ -45,7 +45,7 @@ export default function Contact() {
                   </div>
                   <div className="flex-1">
                     <label
-                      className="mb-1 block text-sm font-medium text-indigo-200/65"
+                      className="mb-1 block text-sm font-medium text-indigo-200/90"
                       htmlFor="last-name"
                     >
                       Surname
@@ -61,7 +61,7 @@ export default function Contact() {
                 <div className="flex flex-col gap-x-6 gap-y-4 md:flex-row">
                   <div className="flex-1">
                     <label
-                      className="mb-1 block text-sm font-medium text-indigo-200/65"
+                      className="mb-1 block text-sm font-medium text-indigo-200/90"
                       htmlFor="email"
                     >
                       Email
@@ -75,7 +75,7 @@ export default function Contact() {
                   </div>
                   <div className="flex-1">
                     <label
-                      className="mb-1 block text-sm font-medium text-indigo-200/65"
+                      className="mb-1 block text-sm font-medium text-indigo-200/90"
                       htmlFor="country"
                     >
                       Country
@@ -97,7 +97,7 @@ export default function Contact() {
                 <div className="flex flex-col gap-x-6 gap-y-4 md:flex-row">
                   <div className="flex-1">
                     <label
-                      className="mb-1 block text-sm font-medium text-indigo-200/65"
+                      className="mb-1 block text-sm font-medium text-indigo-200/90"
                       htmlFor="topic"
                     >
                       Topic
@@ -124,7 +124,7 @@ export default function Contact() {
                   </div>
                   <div className="flex-1">
                     <label
-                      className="mb-1 block text-sm font-medium text-indigo-200/65"
+                      className="mb-1 block text-sm font-medium text-indigo-200/90"
                       htmlFor="subject"
                     >
                       Subject
@@ -139,7 +139,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <label
-                    className="mb-1 block text-sm font-medium text-indigo-200/65"
+                    className="mb-1 block text-sm font-medium text-indigo-200/90"
                     htmlFor="description"
                   >
                     Full description
@@ -154,7 +154,7 @@ export default function Contact() {
                 </div>
               </div>
               <div className="mt-8 flex w-full flex-col justify-between gap-5 md:flex-row md:items-center">
-                <p className="text-sm text-indigo-200/65">
+                <p className="text-sm text-indigo-200/90">
                   By continuing, you agree to our{' '}
                   <a className="underline hover:no-underline" href="#0">
                     Terms of Use

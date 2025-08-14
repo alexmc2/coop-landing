@@ -68,7 +68,7 @@ export default function HeroHome() {
               variants={slideUp({ delay: getAnimationDelay(2) })}
               initial="hidden"
               animate="show"
-              className="max-w-7xl mx-auto text-lg md:text-xl text-indigo-200/65 leading-relaxed mb-6 md:mb-8 px-4 sm:px-0"
+              className="max-w-7xl mx-auto text-lg md:text-xl text-indigo-200/90 leading-relaxed mb-6 md:mb-8 px-4 sm:px-0"
             >
               {description}
             </motion.p>
@@ -79,7 +79,7 @@ export default function HeroHome() {
                   text={specialText}
                   delay={getAnimationDelay(3)}
                   typingSpeed={60}
-                  className="text-xl md:text-2xl font-medium text-indigo-300"
+                  className="text-xl md:text-2xl font-medium text-indigo-200/90"
                 />
               </div>
             )}
@@ -126,7 +126,7 @@ export default function HeroHome() {
             animate="show"
             className="flex justify-center"
           >
-            <div className="relative">
+            <div className="relative pb-12">
               <Image
                 src={HeroImage}
                 alt="Co-op Dashboard Preview"

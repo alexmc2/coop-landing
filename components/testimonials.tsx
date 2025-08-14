@@ -115,10 +115,10 @@ export default function Testimonials() {
       <div className="border-t py-12 [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-400/.25),transparent)1] md:py-20">
         {/* Section header */}
         <div className="mx-auto max-w-3xl pb-12 text-center">
-          <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-slate-200),var(--color-indigo-200),var(--color-slate-50),var(--color-indigo-300),var(--color-slate-200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
+          <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-slate-200),var(--color-indigo-200),var(--color-slate-50),var(--color-indigo-300),var(--color-slate-200))] bg-[length:200%_auto] bg-clip-text pb-4  text-3xl font-semibold text-transparent md:text-4xl">
             Don't take our word for it
           </h2>
-          <p className="text-lg text-indigo-200/65">
+          <p className="text-lg text-indigo-200/90">
             We provide tech-first solutions that empower decision-makers to
             build healthier and happier workspaces from anywhere in the world.
           </p>
@@ -286,7 +286,7 @@ export function Testimonial({
         <div>
           <Image src={testimonial.clientImg} height={36} alt="Client logo" />
         </div>
-        <p className="text-indigo-200/65 before:content-['“'] after:content-['”']">
+        <p className="text-indigo-200/90 before:content-['“'] after:content-['”']">
           {children}
         </p>
         <div className="flex items-center gap-3">
@@ -301,7 +301,7 @@ export function Testimonial({
             <span>{testimonial.name}</span>
             <span className="text-slate-700"> - </span>
             <a
-              className="text-indigo-200/65 transition-colors hover:text-indigo-500"
+              className="text-indigo-200/90 transition-colors hover:text-indigo-500"
               href="#0"
             >
               {testimonial.company}

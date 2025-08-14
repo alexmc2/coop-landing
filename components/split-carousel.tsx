@@ -51,10 +51,10 @@ export default function SplitCarousel() {
                 </div>
                 <div className="relative mb-6 border-l [border-image:linear-gradient(to_bottom,transparent,--theme(--color-slate-400/.25),transparent)1] after:absolute after:left-0 after:top-0 after:h-4 after:w-px after:origin-bottom after:-translate-y-full after:animate-shine after:bg-[linear-gradient(180deg,transparent,--theme(--color-indigo-500/.5)_25%,--theme(--color-indigo-500)_50%,--theme(--color-indigo-500/.5)_75%,transparent)] after:opacity-0">
                   <div className="mb-4">
-                    <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-slate-200),var(--color-indigo-200),var(--color-slate-50),var(--color-indigo-300),var(--color-slate-200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
+                    <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-slate-200),var(--color-indigo-200),var(--color-slate-50),var(--color-indigo-300),var(--color-slate-200))] bg-[length:200%_auto] bg-clip-text pb-4  text-3xl font-semibold text-transparent md:text-4xl">
                       Improve efficiency & global coverage
                     </h2>
-                    <p className="text-indigo-200/65">
+                    <p className="text-indigo-200/90">
                       Open is so simple to use, it's easy to overlook the wealth
                       of complex technologies packed under the hood that keep
                       Open robust, safe, and blazing fast.
@@ -89,7 +89,7 @@ export default function SplitCarousel() {
                               {tab.title}
                             </span>
                             <span className="text-slate-700"> - </span>
-                            <span className="text-indigo-200/65">
+                            <span className="text-indigo-200/90">
                               {tab.description}
                             </span>
                           </span>
@@ -99,7 +99,7 @@ export default function SplitCarousel() {
                   </TabList>
                 </div>
                 <div>
-                  <p className="mb-4 font-nacelle text-slate-200">
+                  <p className="mb-4  text-slate-200">
                     “I was blown away by how easy it was to create my content
                     using this tool! Within a few hours, I had a
                     professional-looking flow up and running.”
@@ -116,7 +116,7 @@ export default function SplitCarousel() {
                       <span>Chris Pick</span>
                       <span className="text-slate-700"> - </span>
                       <a
-                        className="text-indigo-200/65 transition-colors hover:text-indigo-500"
+                        className="text-indigo-200/90 transition-colors hover:text-indigo-500"
                         href="#0"
                       >
                         Notion Circle

@@ -45,7 +45,7 @@ export default function Career() {
         <div className="pb-12 md:pb-20">
           <div className="mx-auto max-w-3xl">
             {/* Section header */}
-            <h3 className="mb-8 font-nacelle text-xl font-semibold md:text-2xl">
+            <h3 className="mb-8  text-xl font-semibold md:text-2xl">
               Open positions
             </h3>
             {/* Job list */}
@@ -59,16 +59,16 @@ export default function Career() {
                     <div>
                       <div className="mb-2">
                         <a
-                          className="flex items-center justify-between font-nacelle text-lg font-semibold text-slate-200 transition before:absolute before:inset-0 hover:text-indigo-500"
+                          className="flex items-center justify-between  text-lg font-semibold text-slate-200 transition before:absolute before:inset-0 hover:text-indigo-500"
                           href="#0"
                         >
                           {position.title}
                         </a>
                       </div>
-                      <div className="mb-4 text-[1rem] text-indigo-200/65">
+                      <div className="mb-4 text-[1rem] text-indigo-200/90">
                         {position.description}
                       </div>
-                      <div className="flex flex-wrap items-center text-sm text-indigo-200/65">
+                      <div className="flex flex-wrap items-center text-sm text-indigo-200/90">
                         <div className="inline-flex items-center">
                           <svg
                             className="mr-2 shrink-0"

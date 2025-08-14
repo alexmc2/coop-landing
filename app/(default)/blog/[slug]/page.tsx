@@ -52,11 +52,11 @@ export default async function SinglePost(props: {
               <article>
                 {/* Post header */}
                 <header className="mb-8">
-                  <h1 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-slate-200),var(--color-indigo-200),var(--color-slate-50),var(--color-indigo-300),var(--color-slate-200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
+                  <h1 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-slate-200),var(--color-indigo-200),var(--color-slate-50),var(--color-indigo-300),var(--color-slate-200))] bg-[length:200%_auto] bg-clip-text pb-4  text-3xl font-semibold text-transparent md:text-4xl">
                     {post.metadata.title}
                   </h1>
                   <div className="mx-auto mb-5 max-w-3xl">
-                    <p className="text-lg text-indigo-200/65">
+                    <p className="text-lg text-indigo-200/90">
                       {post.metadata.summary}
                     </p>
                   </div>
@@ -77,7 +77,7 @@ export default async function SinglePost(props: {
                         <span>{post.metadata.author}</span>
                         <span className="text-slate-700"> - </span>
                         <a
-                          className="text-indigo-200/65 transition-colors hover:text-indigo-500"
+                          className="text-indigo-200/90 transition-colors hover:text-indigo-500"
                           href={post.metadata.authorLink}
                         >
                           {post.metadata.authorRole}
@@ -114,7 +114,7 @@ export default async function SinglePost(props: {
                 )}
 
                 {/* Article content */}
-                <div className="prose max-w-none text-indigo-200/65 prose-headings:scroll-mt-24 prose-headings:font-nacelle prose-headings:font-semibold prose-headings:text-slate-200 prose-h2:mb-4 prose-h2:text-2xl prose-a:font-medium prose-a:text-indigo-500 prose-a:no-underline hover:prose-a:underline prose-blockquote:border-l prose-blockquote:border-indigo-500 prose-blockquote:pl-4 prose-blockquote:font-normal prose-blockquote:italic prose-blockquote:text-indigo-200/65 prose-figcaption:mt-3 prose-figcaption:text-center prose-figcaption:text-sm prose-figcaption:text-slate-600 prose-strong:font-medium prose-strong:text-slate-200 prose-code:rounded prose-code:bg-slate-100 prose-code:px-1 prose-code:py-0.5 prose-code:font-mono prose-code:text-slate-900 prose-code:before:content-[''] prose-code:after:content-[''] prose-pre:border prose-pre:border-slate-700 prose-pre:bg-slate-900 prose-img:rounded-2xl md:prose-h2:text-3xl [&_blockquote_p:first-of-type]:before:content-none [&_blockquote_p:last-of-type]:after:content-none">
+                <div className="prose max-w-none text-indigo-200/90 prose-headings:scroll-mt-24 prose-headings: prose-headings:font-semibold prose-headings:text-slate-200 prose-h2:mb-4 prose-h2:text-2xl prose-a:font-medium prose-a:text-indigo-500 prose-a:no-underline hover:prose-a:underline prose-blockquote:border-l prose-blockquote:border-indigo-500 prose-blockquote:pl-4 prose-blockquote:font-normal prose-blockquote:italic prose-blockquote:text-indigo-200/90 prose-figcaption:mt-3 prose-figcaption:text-center prose-figcaption:text-sm prose-figcaption:text-slate-600 prose-strong:font-medium prose-strong:text-slate-200 prose-code:rounded prose-code:bg-slate-100 prose-code:px-1 prose-code:py-0.5 prose-code:font-mono prose-code:text-slate-900 prose-code:before:content-[''] prose-code:after:content-[''] prose-pre:border prose-pre:border-slate-700 prose-pre:bg-slate-900 prose-img:rounded-2xl md:prose-h2:text-3xl [&_blockquote_p:first-of-type]:before:content-none [&_blockquote_p:last-of-type]:after:content-none">
                   <CustomMDX source={post.content} />
                 </div>
               </article>

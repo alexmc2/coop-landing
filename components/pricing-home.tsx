@@ -1,7 +1,5 @@
 import Image from 'next/image';
 import BlurredShape from '@/public/images/blurred-shape.svg';
-import TestimonialImage from '@/public/images/large-testimonial-01.jpg';
-import PricingTable from '@/components/pricing-table';
 
 export default function PricingHome() {
   return (
@@ -22,45 +20,49 @@ export default function PricingHome() {
         <div className="border-t py-12 [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-400/.25),transparent)1] md:py-20">
           {/* Section header */}
           <div className="mx-auto max-w-3xl text-center">
-            <div className="inline-flex items-center gap-3 pb-3 before:h-px before:w-8 before:bg-linear-to-r before:from-transparent before:to-indigo-200/50 after:h-px after:w-8 after:bg-linear-to-l after:from-transparent after:to-indigo-200/50">
-              <span className="inline-flex bg-linear-to-r from-indigo-500 to-indigo-200 bg-clip-text text-transparent">
-                Simple Pricing
-              </span>
-            </div>
-            <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-slate-200),var(--color-indigo-200),var(--color-slate-50),var(--color-indigo-300),var(--color-slate-200))] bg-[length:200%_auto] bg-clip-text pb-10 font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
-              Pick the right plan for your business
+            <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-slate-200),var(--color-indigo-200),var(--color-slate-50),var(--color-indigo-300),var(--color-slate-200))] bg-[length:200%_auto] bg-clip-text pb-4  text-3xl font-semibold text-transparent md:text-4xl">
+              Let's Talk About Your Co-op
             </h2>
+            <p className="text-lg text-slate-300 mb-8">
+              I'm still figuring out the best way to share this platform with
+              other co-ops. If you're interested, let's have a chat about your
+              needs and how we might work together.
+            </p>
           </div>
-          {/* Pricing table */}
-          <PricingTable />
-          {/* Single testimonial */}
-          <div className="mx-auto max-w-3xl">
-            <div className="pt-12 md:pt-20">
-              <div className="text-center">
-                <Image
-                  className="mb-3 inline-flex rounded-full"
-                  src={TestimonialImage}
-                  width={40}
-                  height={40}
-                  alt="Large testimonial"
-                />
-                <p className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-slate-200),var(--color-indigo-200),var(--color-slate-50),var(--color-indigo-300),var(--color-slate-200))] bg-[length:200%_auto] bg-clip-text pb-3 font-nacelle text-xl font-semibold text-transparent">
-                  “Open PRO lives up to its name. It's incredibly easy to use
-                  yet powerful enough to handle all my content needs
-                  effortlessly. It's become an essential part of our work
-                  routine.”
-                </p>
-                <div className="text-sm font-medium text-slate-200">
-                  <span>Chris Pick</span>
-                  <span className="text-slate-700"> - </span>
-                  <a
-                    className="text-indigo-200/65 transition-colors hover:text-indigo-500"
-                    href="#0"
-                  >
-                    VP of Product, Disney
-                  </a>
-                </div>
-              </div>
+
+          {/* Temporary pricing info */}
+          <div className="mx-auto max-w-2xl">
+            <div className="rounded-2xl border border-slate-800 bg-slate-900/50 p-8 text-center">
+              <h3 className="text-xl font-semibold text-slate-200 mb-4">
+                Currently in Beta
+              </h3>
+              <p className="text-slate-300 mb-6">
+                The platform is fully functional and actively used by my own
+                co-op. I'm looking for a few other housing co-ops to try it out
+                and provide feedback.
+              </p>
+              <ul className="text-left text-slate-400 space-y-3 mb-8 max-w-md mx-auto">
+                <li className="flex items-start">
+                  <span className="text-indigo-400 mr-2">✓</span>
+                  <span>Full platform access for your co-op</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-indigo-400 mr-2">✓</span>
+                  <span>Direct support from me (the developer)</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-indigo-400 mr-2">✓</span>
+                  <span>Help with initial setup and data migration</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-indigo-400 mr-2">✓</span>
+                  <span>Your feedback shapes future features</span>
+                </li>
+              </ul>
+              <p className="text-sm text-slate-500">
+                Pricing will be kept affordable and transparent - housing co-ops
+                shouldn't break the bank for good tools.
+              </p>
             </div>
           </div>
         </div>

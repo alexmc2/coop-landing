@@ -42,7 +42,7 @@ export default function HelpSidebar() {
                 className={`group flex items-center transition ${
                   pathname === link.href
                     ? 'text-indigo-500'
-                    : 'text-indigo-200/65 hover:text-indigo-500'
+                    : 'text-indigo-200/90 hover:text-indigo-500'
                 }`}
                 href={link.href}
               >
