@@ -22,8 +22,10 @@ export default function MobileMenu() {
         return;
       setMobileNavOpen(false);
     };
-    document.addEventListener('click', clickHandler);
-    return () => document.removeEventListener('click', clickHandler);
+    if (typeof document !== 'undefined') {
+      document.addEventListener('click', clickHandler);
+      return () => document.removeEventListener('click', clickHandler);
+    }
   });
 
   // close the mobile menu if the esc key is pressed
@@ -32,8 +34,10 @@ export default function MobileMenu() {
       if (!mobileNavOpen || keyCode !== 27) return;
       setMobileNavOpen(false);
     };
-    document.addEventListener('keydown', keyHandler);
-    return () => document.removeEventListener('keydown', keyHandler);
+    if (typeof document !== 'undefined') {
+      document.addEventListener('keydown', keyHandler);
+      return () => document.removeEventListener('keydown', keyHandler);
+    }
   });
 
   return (

@@ -54,9 +54,11 @@ export default function ZoomableImage({
         style={{ width: '100vw', height: '100vh', maxWidth: '100vw' }}
         onPointerDownOutside={(e) => {
           e.preventDefault();
-          document.dispatchEvent(
-            new KeyboardEvent('keydown', { key: 'Escape' })
-          );
+          if (typeof document !== 'undefined') {
+            document.dispatchEvent(
+              new KeyboardEvent('keydown', { key: 'Escape' })
+            );
+          }
         }}
       >
         <DialogTitle className="sr-only">{alt || 'Image'}</DialogTitle>

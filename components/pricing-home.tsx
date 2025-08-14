@@ -23,8 +23,8 @@ export default function PricingHome() {
             <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-slate-200),var(--color-indigo-200),var(--color-slate-50),var(--color-indigo-300),var(--color-slate-200))] bg-[length:200%_auto] bg-clip-text pb-4  text-3xl font-semibold text-transparent md:text-4xl">
               Let's Talk About Your Co-op
             </h2>
-            <p className="text-lg text-slate-300 mb-8">
-              I'm still figuring out the best way to share this platform with
+            <p className="text-lg text-indigo-200/90 mb-8">
+              I'm still working out the best way to share this platform with
               other co-ops. If you're interested, let's have a chat about your
               needs and how we might work together.
             </p>
