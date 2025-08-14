@@ -4,7 +4,7 @@ export const heroSection: HeroSectionType = {
   subtitle: '',
   title: 'Co-op Connect',
   tagline: 'A Housing Co-op Management Platform',
-  description: 
+  description:
     'Transform your housing cooperative with our comprehensive digital platform. ' +
     'From treasury management to maintenance tracking, from meeting minutes to member collaboration — ' +
     'everything your co-op needs in one secure, customisable application.',
@@ -12,7 +12,7 @@ export const heroSection: HeroSectionType = {
   cta: {
     primary: {
       title: 'View Demo',
-      url: '#demo',
+      url: 'https://coop-connect-demo.vercel.app/',
       sameTab: true,
     },
     secondary: {

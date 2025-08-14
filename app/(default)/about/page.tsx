@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "About us - Open PRO",
-  description: "Page description",
+  title: 'About Co-op Connect',
+  description: 'About Co-op Connect',
 };
 
 import PageIllustration from "@/components/page-illustration";

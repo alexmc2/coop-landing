@@ -7,8 +7,10 @@ import {
   DialogContent,
   DialogTitle,
   DialogTrigger,
+  DialogClose,
 } from '@/components/ui/dialog';
 import { DetailedHTMLProps, ImgHTMLAttributes } from 'react';
+import { XIcon } from 'lucide-react';
 // import { VisuallyHidden } from '@radix-ui/react-visually-hidden';
 
 interface ZoomableImageProps
@@ -52,8 +54,9 @@ export default function ZoomableImage({
         />
       </DialogTrigger>
       <DialogContent
-        className="w-screen h-screen max-w-none border-0 bg-black/95 p-2 sm:p-4 md:p-8"
+        className="w-screen h-screen max-w-none border-0 bg-black/90 p-4 sm:p-4 md:p-8"
         style={{ width: '100vw', height: '100vh', maxWidth: '100vw' }}
+        showCloseButton={false}
         onPointerDownOutside={(e) => {
           e.preventDefault();
           if (typeof document !== 'undefined') {
@@ -64,13 +67,20 @@ export default function ZoomableImage({
         }}
       >
         <DialogTitle className="sr-only">{alt || 'Image'}</DialogTitle>
-        <div className="relative w-full h-full flex items-center justify-center overflow-auto">
-          <img
-            src={src}
-            alt={alt || ''}
-            className="min-w-[80vw] min-h-[80vh] w-auto h-auto"
-            style={{ objectFit: 'contain', maxWidth: 'none' }}
-          />
+        <div className="w-full h-full flex flex-col gap-4 pt-8">
+          <div className="flex justify-end">
+            <DialogClose className="rounded-full bg-white hover:bg-gray-100 p-2 transition-colors shadow-lg">
+              <XIcon className="h-6 w-6 text-black" />
+              <span className="sr-only">Close</span>
+            </DialogClose>
+          </div>
+          <div className="flex-1 flex items-center justify-center overflow-auto">
+            <img
+              src={src}
+              alt={alt || ''}
+              className="max-w-full max-h-full w-auto h-auto object-contain"
+            />
+          </div>
         </div>
       </DialogContent>
     </Dialog>
