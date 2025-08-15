@@ -1,24 +1,40 @@
 'use client';
 
 import Image from 'next/image';
-import HeroImage from '@/public/images-app/hero-image-03.jpg';
+import HeroImageLight from '@/public/images-app/hero-image-03.jpg';
+import HeroImageDark from '@/public/images-app/hero-image-03-dark.png';
 import { motion } from 'framer-motion';
 import { heroSection } from '@/lib/content/hero';
 import { slideUp, fadeIn, scaleIn } from '@/lib/styles/animations';
 import TypingAnimation from '@/components/ui/typing-animation';
+import { useTheme } from 'next-themes';
+import { useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
 
 const Player = dynamic(
-  () => import('@lottiefiles/react-lottie-player').then((mod) => ({ default: mod.Player })),
+  () =>
+    import('@lottiefiles/react-lottie-player').then((mod) => ({
+      default: mod.Player,
+    })),
   { ssr: false }
 );
 
 export default function HeroHome() {
+  const { theme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+  
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+  
   const { subtitle, title, tagline, description, specialText, cta } =
     heroSection;
 
   const getAnimationDelay = (i: number, increment = 0.15) =>
     0.3 + increment * i;
+    
+  // Use light images in dark theme, dark images in light theme
+  const heroImage = mounted && theme === 'dark' ? HeroImageLight : HeroImageDark;
 
   return (
     <section className="relative overflow-hidden">
@@ -31,7 +47,7 @@ export default function HeroHome() {
             <Player
               autoplay
               loop
-              src="/lotties/house.json"
+              src={mounted && theme === 'light' ? "/lotties/house-light.json" : "/lotties/house.json"}
               style={{ height: '120px', width: '120px' }}
             />
           </div>
@@ -44,7 +60,7 @@ export default function HeroHome() {
                 })}
                 initial="hidden"
                 animate="show"
-                className="mb-4 md:mb-6 text-sm font-medium uppercase tracking-wider text-indigo-300"
+                className="mb-4 md:mb-6 text-sm font-medium uppercase tracking-wider text-sky-600 dark:text-indigo-300"
               >
                 {subtitle}
               </motion.p>
@@ -55,7 +71,7 @@ export default function HeroHome() {
                 variants={slideUp({ delay: getAnimationDelay(0) })}
                 initial="hidden"
                 animate="show"
-                className="text-5xl md:text-8xl lg:text-8xl font-bold tracking-tight text-white leading-[1.1] md:leading-tight mb-4 md:mb-0"
+                className="text-5xl md:text-8xl lg:text-8xl font-bold tracking-tight text-slate-900 dark:text-white leading-[1.1] md:leading-tight mb-4 md:mb-0"
               >
                 {title}
               </motion.h1>
@@ -63,7 +79,7 @@ export default function HeroHome() {
                 variants={slideUp({ delay: getAnimationDelay(1) })}
                 initial="hidden"
                 animate="show"
-                className="text-2xl md:text-6xl lg:text-6xl font-bold tracking-tight text-indigo-200/80 leading-[1.2] md:leading-tight"
+                className="text-2xl md:text-6xl lg:text-6xl font-bold tracking-tight text-sky-500 dark:text-indigo-200/80 leading-[1.2] md:leading-tight"
               >
                 {tagline}
               </motion.h1>
@@ -73,7 +89,7 @@ export default function HeroHome() {
               variants={slideUp({ delay: getAnimationDelay(2) })}
               initial="hidden"
               animate="show"
-              className="max-w-7xl mx-auto text-lg md:text-xl text-indigo-200/90 leading-relaxed mb-6 md:mb-8 px-4 sm:px-0"
+              className="max-w-7xl mx-auto text-lg md:text-xl text-slate-600 dark:text-indigo-200/90 leading-relaxed mb-6 md:mb-8 px-4 sm:px-0"
             >
               {description}
             </motion.p>
@@ -84,7 +100,7 @@ export default function HeroHome() {
                   text={specialText}
                   delay={getAnimationDelay(3)}
                   typingSpeed={60}
-                  className="text-xl md:text-2xl font-medium text-indigo-200/90"
+                  className="text-xl md:text-2xl font-medium text-sky-600 dark:text-indigo-400"
                 />
               </div>
             )}
@@ -96,27 +112,19 @@ export default function HeroHome() {
               className="flex flex-col sm:flex-row gap-4 justify-center items-center"
             >
               <a
-                className="px-8 py-3 bg-indigo-500 text-white font-medium rounded-lg hover:bg-indigo-600 transition-colors flex items-center gap-2"
+                className="btn group px-8 py-3 bg-gradient-to-t from-sky-600 dark:from-indigo-600 to-sky-500 dark:to-indigo-500 bg-[length:100%_100%] bg-[bottom] text-white font-medium rounded-lg shadow-[inset_0px_1px_0px_0px_theme(colors.white/.16)] hover:bg-[length:100%_150%] transition-all flex items-center gap-2"
                 href={cta.primary.url}
               >
-                {cta.primary.title}
-                <svg
-                  className="w-4 h-4"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M13 7l5 5m0 0l-5 5m5-5H6"
-                  />
-                </svg>
+                <span className="relative inline-flex items-center">
+                  {cta.primary.title}
+                  <span className="ml-1 tracking-normal text-white/50 transition-transform group-hover:translate-x-0.5">
+                    →
+                  </span>
+                </span>
               </a>
               {cta.secondary && (
                 <a
-                  className="px-8 py-3 bg-slate-800 text-slate-300 font-medium rounded-lg hover:bg-slate-700 transition-colors"
+                  className="px-8 py-3 bg-gradient-to-b from-slate-200 dark:from-slate-800 to-slate-300/60 dark:to-slate-800/60 text-slate-700 dark:text-slate-300 font-medium rounded-lg border border-slate-300 dark:border-transparent hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors"
                   href={cta.secondary.url}
                 >
                   {cta.secondary.title}
@@ -133,14 +141,13 @@ export default function HeroHome() {
           >
             <div className="relative pb-12">
               <Image
-                src={HeroImage}
+                src={heroImage}
                 alt="Co-op Dashboard Preview"
                 width={1104}
                 height={576}
-                className="mx-auto rounded-xl border border-slate-800"
-                style={{ boxShadow: 'none' }}
+                className="mx-auto rounded-xl border-0 dark:border dark:border-slate-800 shadow-[0_16px_50px_rgba(0,0,0,0.25),0_6px_15px_rgba(0,0,0,0.15)] dark:shadow-none"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none rounded-xl"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none rounded-xl dark:block hidden"></div>
             </div>
             <motion.div
               variants={fadeIn({ delay: getAnimationDelay(6) })}

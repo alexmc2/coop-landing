@@ -11,10 +11,12 @@ import Features from '@/components/features';
 import Pricing from '@/components/pricing-home';
 import SplitCarousel from '@/components/split-carousel';
 import Cta from '@/components/cta';
+import ThemeToggle from '@/components/theme-toggle';
 
 export default function Home() {
   return (
     <>
+      <ThemeToggle />
       <PageIllustration />
       <Hero />
       <Workflows />

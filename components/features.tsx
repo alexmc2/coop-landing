@@ -1,15 +1,30 @@
 'use client';
 
 import Image from 'next/image';
-import BlurredShapeslate from '@/public/images/blurred-shape-slate.svg';
-import BlurredShape from '@/public/images/blurred-shape.svg';
-import GalleryImage from '@/public/images-app/gallery-light.png';
+// import BlurredShapeslate from '@/public/images/blurred-shape-slate.svg';
+// import BlurredShape from '@/public/images/blurred-shape.svg';
+import GalleryImageLight from '@/public/images-app/gallery-light.png';
+import GalleryImageDark from '@/public/images-app/gallery-dark.png';
 import { motion } from 'framer-motion';
 import { scaleIn, fadeIn } from '@/lib/styles/animations';
+import { useTheme } from 'next-themes';
+import { useEffect, useState } from 'react';
 
 export default function Features() {
+  const { theme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+  
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+  
   const getAnimationDelay = (i: number, increment = 0.15) =>
     0.3 + increment * i;
+    
+  // Show contrast: light interface in dark theme, dark interface in light theme
+  const galleryImage = mounted ? 
+    (theme === 'dark' ? GalleryImageLight : GalleryImageDark) : 
+    GalleryImageDark;
 
   return (
     <section className="relative" id="features">
@@ -17,51 +32,51 @@ export default function Features() {
         className="pointer-events-none absolute left-1/2 top-0 -z-10 -mt-20 -translate-x-1/2"
         aria-hidden="true"
       >
-        <Image
+        {/* <Image
           className="max-w-none"
           src={BlurredShapeslate}
           width={760}
           height={668}
           alt="Blurred shape"
-        />
+        /> */}
       </div>
       <div
         className="pointer-events-none absolute bottom-0 left-1/2 -z-10 -mb-80 -translate-x-[120%] opacity-50"
         aria-hidden="true"
       >
-        <Image
+        {/* <Image
           className="max-w-none"
           src={BlurredShape}
           width={760}
           height={668}
           alt="Blurred shape"
-        />
+        /> */}
       </div>
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="border-t pt-16 pb-12 [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-400/.25),transparent)1] md:pt-24 md:pb-20">
           {/* Section header */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
             viewport={{ once: true, amount: 0.3 }}
             className="mx-auto max-w-3xl pb-8 text-center md:pb-12"
           >
-            <motion.h2 
+            <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
-              className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-slate-200),var(--color-indigo-200),var(--color-slate-50),var(--color-indigo-300),var(--color-slate-200))] bg-[length:200%_auto] bg-clip-text pb-4  text-3xl font-semibold text-transparent md:text-4xl"
+              className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-slate-700),var(--color-sky-500),var(--color-slate-900),var(--color-sky-600),var(--color-slate-700))] dark:bg-[linear-gradient(to_right,var(--color-slate-200),var(--color-indigo-200),var(--color-slate-50),var(--color-indigo-300),var(--color-slate-200))] bg-[length:200%_auto] bg-clip-text pb-4  text-3xl font-semibold text-transparent md:text-4xl"
             >
               Everything Your Co-op Needs to Thrive
             </motion.h2>
-            <motion.p 
+            <motion.p
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: true }}
-              className="text-lg text-indigo-200/90"
+              className="text-lg text-slate-600 dark:text-indigo-200/90"
             >
               A complete suite of integrated modules designed for housing
               co-operatives. Manage finances, co-ordinate maintenance, organise
@@ -77,19 +92,18 @@ export default function Features() {
             viewport={{ once: true, amount: 0.3 }}
             className="relative flex justify-center pb-12 md:pb-24"
           >
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent pointer-events-none"></div>
             <Image
-              src={GalleryImage}
+              src={galleryImage}
               alt="Co-op Gallery"
               width={1104}
               height={384}
-              className="mx-auto rounded-xl border border-slate-800"
-              style={{ boxShadow: 'none' }}
+              className="mx-auto rounded-xl border-0 dark:border dark:border-slate-800 shadow-[0_12px_40px_rgba(0,0,0,0.2),0_4px_12px_rgba(0,0,0,0.1)] dark:shadow-none"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent pointer-events-none dark:block hidden"></div>
           </motion.div>
 
           {/* Features grid */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5 }}
@@ -193,7 +207,7 @@ function Feature({
       viewport={{ once: true, amount: 0.3 }}
     >
       <div className="flex items-center mb-3">
-        <div className="rounded-lg bg-indigo-500 p-2 mr-3">
+        <div className="rounded-lg bg-sky-500 dark:bg-indigo-500 p-2 mr-3">
           <svg
             className="w-6 h-6 fill-white"
             xmlns="http://www.w3.org/2000/svg"
@@ -202,9 +216,9 @@ function Feature({
             <circle cx="12" cy="12" r="10" />
           </svg>
         </div>
-        <h3 className=" text-[1.1rem] font-semibold text-slate-200">{title}</h3>
+        <h3 className=" text-[1.1rem] font-semibold text-slate-800 dark:text-slate-200">{title}</h3>
       </div>
-      <p className="text-indigo-200/90">{description}</p>
+      <p className="text-slate-600 dark:text-indigo-200/90">{description}</p>
     </motion.article>
   );
 }

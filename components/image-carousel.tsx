@@ -41,17 +41,17 @@ export default function ImageCarousel({ images, className = '' }: ImageCarouselP
         <>
           <button
             onClick={handlePrevious}
-            className="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-slate-900/80 hover:bg-slate-800 rounded-full p-2 transition-colors cursor-pointer"
+            className="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-white/90 dark:bg-slate-900/80 hover:bg-white dark:hover:bg-slate-800 rounded-full p-2 transition-colors cursor-pointer shadow-lg dark:shadow-none"
             aria-label="Previous image"
           >
-            <ChevronLeft className="w-5 h-5 text-white" />
+            <ChevronLeft className="w-5 h-5 text-slate-700 dark:text-white" />
           </button>
           <button
             onClick={handleNext}
-            className="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-slate-900/80 hover:bg-slate-800 rounded-full p-2 transition-colors cursor-pointer"
+            className="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-white/90 dark:bg-slate-900/80 hover:bg-white dark:hover:bg-slate-800 rounded-full p-2 transition-colors cursor-pointer shadow-lg dark:shadow-none"
             aria-label="Next image"
           >
-            <ChevronRight className="w-5 h-5 text-white" />
+            <ChevronRight className="w-5 h-5 text-slate-700 dark:text-white" />
           </button>
         </>
       )}
@@ -80,7 +80,7 @@ export default function ImageCarousel({ images, className = '' }: ImageCarouselP
               key={idx}
               onClick={() => setCurrentIndex(idx)}
               className={`w-2 h-2 rounded-full transition-colors cursor-pointer ${
-                idx === currentIndex ? 'bg-white' : 'bg-white/40 hover:bg-white/60'
+                idx === currentIndex ? 'bg-slate-700 dark:bg-white' : 'bg-slate-400 dark:bg-white/40 hover:bg-slate-600 dark:hover:bg-white/60'
               }`}
               aria-label={`Go to image ${idx + 1}`}
             />

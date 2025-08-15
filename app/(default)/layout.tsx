@@ -11,7 +11,7 @@ export default function DefaultLayout({
     <>
       <AOSInit />
       <main className="relative flex grow flex-col">{children}</main>
-      <Cursor className="hidden lg:block" />
+      <Cursor className="hidden lg:dark:block" />
     </>
   );
 }

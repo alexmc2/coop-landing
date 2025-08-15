@@ -54,7 +54,7 @@ export default function ZoomableImage({
         />
       </DialogTrigger>
       <DialogContent
-        className="w-screen h-screen max-w-none border-0 bg-black/90 p-4 sm:p-4 md:p-8"
+        className="w-screen h-screen max-w-none border-0 bg-white/95 dark:bg-black/95 p-4 sm:p-6 md:p-8"
         style={{ width: '100vw', height: '100vh', maxWidth: '100vw' }}
         showCloseButton={false}
         onPointerDownOutside={(e) => {
@@ -67,14 +67,12 @@ export default function ZoomableImage({
         }}
       >
         <DialogTitle className="sr-only">{alt || 'Image'}</DialogTitle>
-        <div className="w-full h-full flex flex-col gap-4 pt-8">
-          <div className="flex justify-end">
-            <DialogClose className="rounded-full bg-white hover:bg-gray-100 p-2 transition-colors shadow-lg">
-              <XIcon className="h-6 w-6 text-black" />
-              <span className="sr-only">Close</span>
-            </DialogClose>
-          </div>
-          <div className="flex-1 flex items-center justify-center overflow-auto">
+        <div className="relative w-full h-full">
+          <DialogClose className="absolute top-2 right-2 sm:-top-2 sm:-right-2 z-50 rounded-full bg-slate-600 hover:bg-slate-500 p-2.5">
+            <XIcon className="h-5 w-5 text-white" />
+            <span className="sr-only">Close</span>
+          </DialogClose>
+          <div className="w-full h-full flex items-center justify-center">
             <img
               src={src}
               alt={alt || ''}
