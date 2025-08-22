@@ -3,6 +3,7 @@ import './css/style.css';
 import { GeistSans } from 'geist/font/sans';
 import { GeistMono } from 'geist/font/mono';
 import ThemeProvider from '@/components/theme-provider';
+import { Analytics } from '@vercel/analytics/next';
 
 // import Header from "@/components/ui/header";
 
@@ -17,7 +18,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`} suppressHydrationWarning>
+    <html
+      lang="en"
+      className={`${GeistSans.variable} ${GeistMono.variable}`}
+      suppressHydrationWarning
+    >
       <body
         className={`${GeistSans.className} bg-white dark:bg-slate-950 text-base text-slate-800 dark:text-slate-200 antialiased`}
       >
@@ -25,6 +30,7 @@ export default function RootLayout({
           <div className="flex min-h-screen flex-col overflow-hidden supports-[overflow:clip]:overflow-clip">
             {/* <Header /> */}
             {children}
+            <Analytics />
           </div>
         </ThemeProvider>
       </body>
